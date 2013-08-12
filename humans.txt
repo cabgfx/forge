@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Pete Lacey -- Design, Badgers -- @chopeh
+    Martin LeBlanc -- Venue, Sponsors, Infrastructure -- @iconfinder
+    Michael Flarup -- Design -- @flarup
+    Casper Klenz-Kitenge -- Code -- @cabgfx
+    
+
+# THANKS
+
+    All sponsors
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, Modernizr

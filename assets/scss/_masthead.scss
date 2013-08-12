@@ -1,0 +1,124 @@
+.masthead {
+  & {
+    background: url($img-path + 'header-bg.jpg') no-repeat center top;
+    background-size: cover;
+    color: $white;
+  }
+
+  @media (max-width: $screen-desktop) {
+    .container {padding-bottom: 60px;}
+  }
+
+  @media (min-width: $screen-desktop) {
+    .container {padding-top: 155px; padding-bottom: 175px;}
+  }
+}
+
+.logo {
+  $width: 183px;
+  $height: 307px;
+
+  & {
+    margin: 0;
+    line-height: 1;
+    width: $width;
+    height: $height;    
+  }
+
+  > a {
+    @include retina('logo', $width, $height);
+    color: #fff;
+
+    /* Image replacement */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    display: block;
+    width: $width;
+    height: $height;
+    color: $white;
+  }
+
+  @media (max-width: $screen-desktop) {
+    $width: 40px;
+    $height: 68px;
+
+    & {margin: 0 auto 30px;}
+    &, > a {
+      width: $width;
+      height: $height;
+    }
+    
+    > a {@include retina('logo-small', $width, $height);}
+  }
+
+  @media (min-width: $screen-desktop) {
+    position: absolute;
+    left: 0;
+    top: 230px;
+  }
+}
+
+.lead {
+  & {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 100;
+  }
+
+  strong {font-weight: 300;}
+
+  + p {
+    margin: 40px 0;
+    font: 100 22px $base-font;
+  }
+
+  @media (max-width: $screen-desktop) {font-size: 24px;}
+  @media (min-width: $screen-desktop) {margin-right: 20px;}
+}
+
+.signup {
+  & {
+    @extend .clearfix;
+    position: relative;
+  }
+
+  input, button {
+    @include transition(all .2s ease-in-out);
+    @include box-sizing(border-box);
+
+    border-radius: 50px;
+    border: 3px solid $white;
+    font: italic bold 20px/1 $base-font;
+    text-transform: uppercase;
+  }
+
+  input {
+    width: 100%;
+    padding: 15px 20px;
+    background: transparent;
+    color: inherit;
+    outline: 0;
+
+    @include placeholder {color: rgba($white, .5); line-height: 1.25;}
+
+    @media (max-width: $screen-desktop) {margin-bottom: 20px;}
+    @media (min-width: $screen-desktop) {
+      &[type="email"] {padding-right: 100px;}
+    }
+  }
+
+  button {
+    & {
+      padding: 17px 30px;
+      background: $white;
+      color: #004835;
+    }
+
+    &:hover, &:active, &:focus {background: transparent; color: $white;}
+
+    @media (max-width: $screen-desktop) {width: 100%;}
+    @media (min-width: $screen-desktop) {position: absolute; right: 20px;}
+  }
+}
