@@ -35,6 +35,9 @@ body {font-family: $base-font;}
   color: $white;
   background: $textcolor;
   font-size: 18px;
+  
+  p {margin-top: 20px; color: #aaa; font-size: 12px;}
+  img {margin-right: 20px;}
 }
 
 .contact {
