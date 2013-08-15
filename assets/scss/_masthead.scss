@@ -91,7 +91,6 @@
     border-radius: 50px;
     border: 3px solid $white;
     font: italic bold 20px/1 $base-font;
-    text-transform: uppercase;
   }
 
   input {
@@ -101,7 +100,11 @@
     color: inherit;
     outline: 0;
 
-    @include placeholder {color: rgba($white, .5); line-height: 1.25;}
+    @include placeholder {
+      color: rgba($white, .5);
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
 
     @media (max-width: $screen-desktop) {margin-bottom: 20px;}
     @media (min-width: $screen-desktop) {
@@ -114,6 +117,7 @@
       padding: 17px 30px;
       background: $white;
       color: #004835;
+      text-transform: uppercase;
     }
 
     &:hover, &:active, &:focus {background: transparent; color: $white;}
