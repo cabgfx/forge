@@ -11,7 +11,7 @@ $name = $_GET['name'];
 $email = $_GET['email'];
 
 $apikey = 'INSERT API KEY HERE';
-$listId = 'INSERT LIDT ID HERE';
+$listId = 'INSERT LIST ID HERE';
 
 $api = new MCAPI($apikey);
  
