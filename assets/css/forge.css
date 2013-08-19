@@ -665,6 +665,21 @@ h2, h3 {
   background: url("../img/header-bg.jpg") no-repeat center top;
   background-size: cover;
   color: #faf9f2; }
+.masthead p {
+  margin: 40px 0;
+  font: 100 22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.masthead .lead {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 100; }
+.masthead .lead strong {
+  font-weight: 300; }
+@media (max-width: 768px) {
+  .masthead .lead {
+    font-size: 24px; } }
+@media (min-width: 768px) {
+  .masthead .lead {
+    margin-right: 20px; } }
 @media (max-width: 768px) {
   .masthead .container {
     padding-bottom: 60px; } }
@@ -712,22 +727,6 @@ h2, h3 {
     position: absolute;
     left: 0;
     top: 230px; } }
-
-.lead {
-  margin: 0;
-  font-size: 36px;
-  font-weight: 100; }
-.lead strong {
-  font-weight: 300; }
-.lead + p {
-  margin: 40px 0;
-  font: 100 22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
-@media (max-width: 768px) {
-  .lead {
-    font-size: 24px; } }
-@media (min-width: 768px) {
-  .lead {
-    margin-right: 20px; } }
 
 .signup {
   position: relative; }

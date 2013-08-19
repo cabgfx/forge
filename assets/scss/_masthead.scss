@@ -5,13 +5,23 @@
     color: $white;
   }
 
-  @media (max-width: $screen-desktop) {
-    .container {padding-bottom: 60px;}
+  p {margin: 40px 0; font: 100 22px $base-font;}
+
+  .lead {
+    & {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 100;
+    }
+
+    strong {font-weight: 300;}
+
+    @media (max-width: $screen-desktop) {font-size: 24px;}
+    @media (min-width: $screen-desktop) {margin-right: 20px;}
   }
 
-  @media (min-width: $screen-desktop) {
-    .container {padding-top: 155px; padding-bottom: 175px;}
-  }
+  @media (max-width: $screen-desktop) {.container {padding-bottom: 60px;}}
+  @media (min-width: $screen-desktop) {.container {padding-top: 155px; padding-bottom: 175px;}}
 }
 
 .logo {
@@ -58,24 +68,6 @@
     left: 0;
     top: 230px;
   }
-}
-
-.lead {
-  & {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 100;
-  }
-
-  strong {font-weight: 300;}
-
-  + p {
-    margin: 40px 0;
-    font: 100 22px $base-font;
-  }
-
-  @media (max-width: $screen-desktop) {font-size: 24px;}
-  @media (min-width: $screen-desktop) {margin-right: 20px;}
 }
 
 .signup {

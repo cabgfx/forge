@@ -37,23 +37,6 @@
 
     <link rel="stylesheet" href="assets/css/forge.css">
     <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <script>
-      $(document).ready(function(){
-
-        $("#submit").bind("click", function() {
-          var email_value = jQuery('#email').val();
-          var name = jQuery('#name').val();
-          var url = "/add_to_mailchimp.php?" + "email=" + email_value + "&name=" + name;
-          jQuery.post(url, function(rslt){
-            $('#mc-embedded-subscribe-form').remove();
-            $('#top').append("<h2>Thanks " + name + "!</h2>");
-          });
-          return false;
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -155,7 +138,9 @@
       </div>
     </footer>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="assets/js/forge.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
