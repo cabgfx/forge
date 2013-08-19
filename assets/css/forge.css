@@ -667,7 +667,8 @@ h2, h3 {
   color: #faf9f2; }
 .masthead p {
   margin: 40px 0;
-  font: 100 22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font: 100 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .05em; }
 .masthead .lead {
   margin: 0;
   font-size: 36px;
@@ -786,6 +787,10 @@ h2, h3 {
   .signup button {
     position: absolute;
     right: 20px; } }
+
+#error-response {
+  color: #e00;
+  font-weight: bold; }
 
 .content h2 {
   float: left;

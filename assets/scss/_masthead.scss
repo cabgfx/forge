@@ -5,7 +5,7 @@
     color: $white;
   }
 
-  p {margin: 40px 0; font: 100 22px $base-font;}
+  p {margin: 40px 0; font: 100 22px $base-font; letter-spacing: .05em;}
 
   .lead {
     & {
@@ -117,4 +117,9 @@
     @media (max-width: $screen-desktop) {width: 100%;}
     @media (min-width: $screen-desktop) {position: absolute; right: 20px;}
   }
+}
+
+#error-response {
+  color: #e00;
+  font-weight: bold;
 }
