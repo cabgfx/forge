@@ -1,4 +1,21 @@
 $(function() {
+  // BigVideo for non-touch devices
+  var BV = new $.BigVideo({container: $('#top')});
+  BV.init();
+  
+  if (!Modernizr.touch) {
+    // $('#big-video-wrap').hide();
+
+    BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge.mp4', {ambient: true});
+
+    // BV.getPlayer().on('loadedmetadata', function() {
+    //   $('.masthead').addClass('has-video');
+    //   $('#big-video-wrap').fadeIn('slow');
+    // })
+  }
+
+
+  // Post signups to Mailchimp
   $("#mc-embedded-subscribe-form").submit(function() {
     var email_value = $('#email').val(),
         name = $('#name').val(),
@@ -6,12 +23,15 @@ $(function() {
         signup_response =
           "Thank you, " + name + "!<br>\
           Welcome to the inner circle of super people who will be informed about Forge events.";
-    
+
+    // Do a simple check for email validity,
+    // show error msg if it fails
     if(email_value.match(/\S+@\S+/)) {
       $.post(url, function(rslt){
         $('#error-response, #mc-embedded-subscribe-form').remove();
         $('#top').append('<p>' + signup_response + '</p>');
-      }); 
+      });
+      // Only show error msg once
     } else if ($('#error-response').length) {
       $('#error-response').fadeOut('fast').fadeIn('fast');
     } else {
@@ -20,4 +40,7 @@ $(function() {
 
     return false;
   });
+
+  // Polyfill <input> @placeholder attribute
+  $('.masthead input').placeholder();
 });

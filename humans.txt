@@ -6,14 +6,25 @@
     Pete Lacey -- Design, Badgers -- @chopeh
     Martin LeBlanc -- Venue, Sponsors, Infrastructure -- @iconfinder
     Michael Flarup -- Design -- @flarup
-    Casper Klenz-Kitenge -- Code -- @cabgfx
-    
+    Casper Klenz-Kitenge -- Code, Responsive design -- @cabgfx
 
 # THANKS
 
-    All sponsors
+    All sponsors!!
+    
+    Letshum.com for inspiration on how to do full-screen BG video like a motherfuckin boss.
+    John Polacek (github: @johnpolacek) for BigVideo.js, especially the walk-through(s).
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, Modernizr
+    H5BP:
+      HTML5, CSS3
+      Normalize.css, Modernizr
+
+    JS Plugins:
+      jQuery by The jQuery Foundation http://jquery.com/
+      jQuery UI by The jQuery Foundation http://jqueryui.com/
+      imagesLoaded by David DeSandro & Thomas Sardyha http://desandro.github.io/imagesloaded/
+      video.js by Brighcove, Inc. http://www.videojs.com/
+      BigVideo.js by John Polacek http://dfcb.github.io/BigVideo.js/
+      @placeholder polyfill by Mathias Bynens http://mths.be/placeholder

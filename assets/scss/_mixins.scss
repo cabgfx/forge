@@ -30,6 +30,10 @@
   &:-ms-input-placeholder {  
     @content;
   }
+
+  &.placeholder { /* Class added by placeholder jQuery polyfill */
+    @content;
+  }
 }
 
 @mixin transition($transition...) {

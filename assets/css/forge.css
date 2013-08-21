@@ -608,6 +608,18 @@ textarea {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+#big-video-wrap {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+#big-video-vid, #big-video-image {
+  position: absolute; }
+
 .container {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -665,16 +677,17 @@ h2, h3 {
   background: #136b54 url("../img/header-bg.jpg") no-repeat center top;
   background-size: cover;
   color: #faf9f2; }
+.masthead.has-video {
+  background: transparent none; }
 .masthead p {
   margin: 40px 0;
-  font: 100 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: .05em; }
+  font: 300 22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .masthead .lead {
   margin: 0;
   font-size: 36px;
-  font-weight: 100; }
-.masthead .lead strong {
   font-weight: 300; }
+.masthead .lead strong {
+  font-weight: 500; }
 @media (max-width: 768px) {
   .masthead .lead {
     font-size: 24px; } }
@@ -763,6 +776,11 @@ h2, h3 {
     line-height: 1.25;
     text-transform: uppercase; }
   .signup input:-ms-input-placeholder {
+    color: rgba(250, 249, 242, 0.5);
+    line-height: 1.25;
+    text-transform: uppercase; }
+  .signup input.placeholder {
+    /* Class added by placeholder jQuery polyfill */
     color: rgba(250, 249, 242, 0.5);
     line-height: 1.25;
     text-transform: uppercase; }
