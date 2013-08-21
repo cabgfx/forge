@@ -8,12 +8,12 @@ body {font-family: $base-font;}
   margin: 0 auto;
   position: relative;
 
-  @media (max-width: $screen-desktop) {padding: 20px; width: 100%;}
-  @media (min-width: $screen-desktop) {padding-left: 230px;}
+  @media (max-width: $screen-small-max) {padding: 20px; width: 100%;}
+  @media (min-width: $screen-medium) {padding-left: 230px;}
 }
 
 .col-1, .col-2 {
-  @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-medium) {
     float: left;
     width: 47.4025974%;
     margin: 0 2.5974026% 0 0;
@@ -27,7 +27,7 @@ body {font-family: $base-font;}
   font-size: 18px;
   line-height: 28px;
 
-  @media (min-width: $screen-desktop) {padding: 40px 0;}
+  @media (min-width: $screen-medium) {padding: 40px 0;}
 }
 
 .sponsors {

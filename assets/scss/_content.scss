@@ -4,7 +4,7 @@
     width: 100%;
     margin: 60px 0 20px;
 
-    @media (max-width: $screen-desktop) {text-align: center;}
+    @media (max-width: $screen-small-max) {text-align: center;}
   }
 }
 
@@ -25,12 +25,12 @@
 
   strong {display: block; font-size: 16px; font-style: italic;}
 
-  @media (max-width: $screen-desktop) {
+  @media (max-width: $screen-small-max) {
     & {text-align: center; margin: 0 0 20px;}
     img {display: block; margin: 0 auto 10px;}
   }
   
-  @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-medium) {
     & {
       height: 160px;
       margin: 0 0 40px;

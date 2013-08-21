@@ -5,6 +5,14 @@ $green: #12ac85;
 $green-dark: #136b54;
 $textcolor: #404040;
 
-$screen-desktop: 768px;
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Tiny screen / phone
+$screen-tiny:                480px;
+$screen-small:               768px;
+$screen-medium:              992px;
+$screen-small-max:           ($screen-medium - 1);
+$screen-large:               1200px;
 
 $base-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;

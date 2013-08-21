@@ -16,12 +16,12 @@
 
     strong {font-weight: 300;}
 
-    @media (max-width: $screen-desktop) {font-size: 24px;}
-    @media (min-width: $screen-desktop) {margin-right: 20px;}
+    @media (max-width: $screen-small) {font-size: 24px;}
+    @media (min-width: $screen-medium) {margin-right: 20px;}
   }
 
-  @media (max-width: $screen-desktop) {.container {padding-bottom: 60px;}}
-  @media (min-width: $screen-desktop) {.container {padding-top: 155px; padding-bottom: 175px;}}
+  @media (max-width: $screen-small-max) {.container {padding-bottom: 60px;}}
+  @media (min-width: $screen-medium) {.container {padding-top: 155px; padding-bottom: 175px;}}
 }
 
 .logo {
@@ -50,7 +50,7 @@
     color: $white;
   }
 
-  @media (max-width: $screen-desktop) {
+  @media (max-width: $screen-small-max) {
     $width: 40px;
     $height: 68px;
 
@@ -63,7 +63,7 @@
     > a {@include retina('logo-small', $width, $height);}
   }
 
-  @media (min-width: $screen-desktop) {
+  @media (min-width: $screen-small-max) {
     position: absolute;
     left: 0;
     top: 230px;
@@ -98,8 +98,8 @@
       text-transform: uppercase;
     }
 
-    @media (max-width: $screen-desktop) {margin-bottom: 20px;}
-    @media (min-width: $screen-desktop) {
+    @media (max-width: $screen-small-max) {margin-bottom: 20px;}
+    @media (min-width: $screen-medium) {
       &[type="email"] {padding-right: 100px;}
     }
   }
@@ -114,8 +114,8 @@
 
     &:hover, &:active, &:focus {background: transparent; color: $white;}
 
-    @media (max-width: $screen-desktop) {width: 100%;}
-    @media (min-width: $screen-desktop) {position: absolute; right: 20px;}
+    @media (max-width: $screen-small-max) {width: 100%;}
+    @media (min-width: $screen-medium) {position: absolute; right: 20px;}
   }
 }
 
