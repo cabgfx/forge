@@ -1,6 +1,6 @@
 .masthead {
   & {
-    background: url($img-path + 'header-bg.jpg') no-repeat center top;
+    background: $green-dark url($img-path + 'header-bg.jpg') no-repeat center top;
     background-size: cover;
     color: $white;
   }

@@ -662,7 +662,7 @@ h2, h3 {
   text-transform: uppercase; }
 
 .masthead {
-  background: url("../img/header-bg.jpg") no-repeat center top;
+  background: #136b54 url("../img/header-bg.jpg") no-repeat center top;
   background-size: cover;
   color: #faf9f2; }
 .masthead p {
