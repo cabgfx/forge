@@ -1,10 +1,11 @@
 .masthead {
-  & {
+  & {color: $white;}
+
+  /* Fallback image banner when video isn't supported */
+  .touch &, .no-js & {
     background: $green-dark url($img-path + 'header-bg.jpg') no-repeat center top;
     background-size: cover;
-    color: $white;
   }
-  &.has-video {background: transparent none;}
 
   p {margin: 40px 0; font: 300 22px $base-font;}
 

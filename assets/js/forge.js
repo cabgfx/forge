@@ -4,14 +4,13 @@ $(function() {
   BV.init();
   
   if (!Modernizr.touch) {
-    // $('#big-video-wrap').hide();
+    $('#big-video-wrap').hide();
 
     BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge.mp4', {ambient: true});
 
-    // BV.getPlayer().on('loadedmetadata', function() {
-    //   $('.masthead').addClass('has-video');
-    //   $('#big-video-wrap').fadeIn('slow');
-    // })
+    BV.getPlayer().on('loadedmetadata', function() {
+      $('#big-video-wrap').fadeIn(1000);
+    })
   }
 
 
