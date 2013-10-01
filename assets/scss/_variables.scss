@@ -4,6 +4,8 @@ $white: #faf9f2;
 $green: #12ac85;
 $green-dark: #136b54;
 $textcolor: #404040;
+$sand: #eeecde;
+$red-callout: #ff5656;
 
 // Media queries breakpoints
 // --------------------------------------------------
@@ -15,4 +17,5 @@ $screen-medium:              992px;
 $screen-small-max:           ($screen-medium - 1);
 $screen-large:               1200px;
 
-$base-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans-serif-font: Helvetica, Arial, sans-serif;
+$base-font: 'Helvetica Neue', $sans-serif-font;

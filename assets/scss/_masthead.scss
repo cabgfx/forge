@@ -1,5 +1,5 @@
 .masthead {
-  & {color: $white;}
+  & {color: $white; font: 300 22px $base-font;}
 
   /* Fallback image banner when video isn't supported */
   .touch &, .no-js & {
@@ -7,23 +7,26 @@
     background-size: cover;
   }
 
-  p {margin: 40px 0; font: 300 22px $base-font;}
+  p {margin: 40px 0;}
 
   .lead {
-    & {
-      margin: 0;
-      font-size: 36px;
-      font-weight: 300;
-    }
-
-    strong {font-weight: 500;}
+    & {margin: 0;}
 
     @media (max-width: $screen-small) {font-size: 24px;}
     @media (min-width: $screen-medium) {margin-right: 20px;}
   }
+}
 
-  @media (max-width: $screen-small-max) {.container {padding-bottom: 60px;}}
-  @media (min-width: $screen-medium) {.container {padding-top: 155px; padding-bottom: 175px;}}
+.masthead .container {
+  @media (max-width: $screen-small-max) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $screen-medium) {
+    padding-top: 155px;
+    padding-bottom: 175px;
+    padding-left: 230px;
+  }
 }
 
 .logo {
@@ -108,10 +111,9 @@
 
   button {
     & {
-      padding: 17px 30px;
+      @include button;
       background: $white;
       color: #004835;
-      text-transform: uppercase;
     }
 
     &:hover, &:active, &:focus {background: transparent; color: $white;}

@@ -16,8 +16,9 @@ body {font-family: $base-font; background: $green-dark url($img-path + 'header-b
   position: relative;
 
   @media (max-width: $screen-small-max) {padding: 20px; width: 100%;}
-  @media (min-width: $screen-medium) {padding-left: 230px;}
 }
+
+.container-copy {font-size: 18px;}
 
 .col-1, .col-2 {
   @media (min-width: $screen-medium) {
@@ -27,11 +28,16 @@ body {font-family: $base-font; background: $green-dark url($img-path + 'header-b
   }
 }
 
+.venue {
+  @extend .clearfix;
+  
+  background: $sand url($img-path + 'venue-bg.gif') no-repeat center top;
+}
+
 .content {
   @extend .clearfix;
 
   background: $white;
-  font-size: 18px;
   line-height: 28px;
 
   @media (min-width: $screen-medium) {padding: 40px 0;}
@@ -41,7 +47,6 @@ body {font-family: $base-font; background: $green-dark url($img-path + 'header-b
   padding: 20px 0;
   color: $white;
   background: $textcolor;
-  font-size: 18px;
   
   p {margin-top: 20px; color: #aaa; font-size: 12px;}
   img {margin-right: 20px; max-height: 60px;}
@@ -51,8 +56,4 @@ body {font-family: $base-font; background: $green-dark url($img-path + 'header-b
   }
 }
 
-.contact {
-  padding: 20px 0;
-  background: $green;
-  font-size: 18px;
-}
+.contact {padding: 20px 0; background: $green;}

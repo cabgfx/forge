@@ -584,25 +584,27 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, .container:before, .content:before, .signup:before, .initiator:before,
+.clearfix:before, .container:before, .venue:before, .content:before, .signup:before, .initiator:before, .details:before,
 .clearfix:after,
 .container:after,
+.venue:after,
 .content:after,
 .signup:after,
-.initiator:after {
+.initiator:after,
+.details:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, .container:after, .content:after, .signup:after, .initiator:after {
+.clearfix:after, .container:after, .venue:after, .content:after, .signup:after, .initiator:after, .details:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, .container, .content, .signup, .initiator {
+.clearfix, .container, .venue, .content, .signup, .initiator, .details {
   *zoom: 1; }
 
 /*
@@ -636,9 +638,9 @@ body {
     .container {
       padding: 20px;
       width: 100%; } }
-  @media (min-width: 992px) {
-    .container {
-      padding-left: 230px; } }
+
+.container-copy {
+  font-size: 18px; }
 
 @media (min-width: 992px) {
   .col-1, .col-2 {
@@ -646,9 +648,11 @@ body {
     width: 47.4025974%;
     margin: 0 2.5974026% 0 0; } }
 
+.venue {
+  background: #eeecde url("../img/venue-bg.gif") no-repeat center top; }
+
 .content {
   background: #faf9f2;
-  font-size: 18px;
   line-height: 28px; }
   @media (min-width: 992px) {
     .content {
@@ -657,8 +661,7 @@ body {
 .sponsors {
   padding: 20px 0;
   color: #faf9f2;
-  background: #404040;
-  font-size: 18px; }
+  background: #404040; }
   .sponsors p {
     margin-top: 20px;
     color: #aaa;
@@ -674,45 +677,48 @@ body {
 
 .contact {
   padding: 20px 0;
-  background: #12ac85;
-  font-size: 18px; }
+  background: #12ac85; }
 
 *:not(form):not(:input) {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
-h2, h3 {
+h2, h3, h4 {
   text-transform: uppercase; }
+
+.lead {
+  font-size: 36px;
+  font-weight: 300; }
+.lead strong {
+  font-weight: 500; }
 
 .masthead {
   /* Fallback image banner when video isn't supported */ }
   .masthead {
-    color: #faf9f2; }
+    color: #faf9f2;
+    font: 300 22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .touch .masthead, .no-js .masthead {
     background: #136b54 url("../img/header-bg.jpg") no-repeat center top;
     background-size: cover; }
   .masthead p {
-    margin: 40px 0;
-    font: 300 22px "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    margin: 40px 0; }
   .masthead .lead {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 300; }
-  .masthead .lead strong {
-    font-weight: 500; }
+    margin: 0; }
   @media (max-width: 768px) {
     .masthead .lead {
       font-size: 24px; } }
   @media (min-width: 992px) {
     .masthead .lead {
       margin-right: 20px; } }
-  @media (max-width: 991px) {
-    .masthead .container {
-      padding-bottom: 60px; } }
-  @media (min-width: 992px) {
-    .masthead .container {
-      padding-top: 155px;
-      padding-bottom: 175px; } }
+
+@media (max-width: 991px) {
+  .masthead .container {
+    padding-bottom: 60px; } }
+@media (min-width: 992px) {
+  .masthead .container {
+    padding-top: 155px;
+    padding-bottom: 175px;
+    padding-left: 230px; } }
 
 .logo {
   margin: 0;
@@ -803,10 +809,14 @@ h2, h3 {
     .signup input[type="email"] {
       padding-right: 100px; } }
 .signup button {
+  border-radius: 50px;
   padding: 17px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
   background: #faf9f2;
-  color: #004835;
-  text-transform: uppercase; }
+  color: #004835; }
 .signup button:hover, .signup button:active, .signup button:focus {
   background: transparent;
   color: #faf9f2; }
@@ -822,12 +832,12 @@ h2, h3 {
   color: #e00;
   font-weight: bold; }
 
-.content h2 {
+.content h4 {
   float: left;
   width: 100%;
   margin: 60px 0 20px; }
   @media (max-width: 991px) {
-    .content h2 {
+    .content h4 {
       text-align: center; } }
 
 .initiator {
@@ -864,7 +874,56 @@ h2, h3 {
     float: left;
     margin: -40px 0 0 -180px; } }
 
-.contact h3 {
+.venue {
+  text-align: center; }
+  .venue h2 {
+    margin: 200px 0 0;
+    font: italic 900 108px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.05em; }
+
+.button {
+  border-radius: 50px;
+  padding: 17px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  background: #ff5656;
+  color: #eeecde;
+  font-size: 20px; }
+  .no-touch .button:hover, .no-touch .button:focus {
+    background: #ef0000; }
+  .button:active {
+    position: relative;
+    top: 1px;
+    left: 1px; }
+
+.details {
+  margin: 140px 0 0;
+  background: #404040 url("../img/event-details-map-bg.gif") no-repeat center top;
+  color: #faf9f2; }
+.details p {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  display: inline;
+  margin: 4.5%;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300; }
+  .details p strong {
+    display: block;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold; }
+
+.contact h4 {
   color: #faf9f2; }
 .contact a {
   color: #faf9f2;
