@@ -674,8 +674,9 @@ body {
   color: #9d9d99;
   font-size: 12px; }
 .sponsors img {
-  margin-right: 60px;
   max-height: 60px; }
+.sponsors img + img {
+  margin-left: 60px; }
 @media (max-width: 480px) {
   .sponsors img {
     display: block;
