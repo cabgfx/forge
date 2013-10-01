@@ -2,9 +2,11 @@
   text-align: center;
   
   h2 {
-    margin: 200px 0 0;
-    font: italic 900 108px/1 $base-font;
-    letter-spacing: -.05em;
+    margin: 140px 0 0;
+    font-size: 108px;
+    line-height: 1;
+
+    @media (max-width: $screen-small-max) {font-size: 36px;}
   }
 }
 

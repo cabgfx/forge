@@ -12,7 +12,6 @@
   .lead {
     & {margin: 0;}
 
-    @media (max-width: $screen-small) {font-size: 24px;}
     @media (min-width: $screen-medium) {margin-right: 20px;}
   }
 }

@@ -1,20 +1,12 @@
-.content {
-  h4 {
-    float: left;
-    width: 100%;
-    margin: 60px 0 20px;
+.initiators {float: left; width: 100%; margin-top: 60px;}
 
-    @media (max-width: $screen-small-max) {text-align: center;}
-  }
-}
-
-.initiator {
+.initiator, .person {
   & {
     @extend .clearfix;
     @include box-sizing(border-box);
 
-    font-size: 14px;
-    line-height: 1.5em;
+    margin: 0 0 40px;
+    text-align: center;
   }
 
   a {
@@ -23,19 +15,30 @@
     &:before {content: ""; display: block;}
   }
 
-  strong {display: block; font-size: 16px; font-style: italic;}
+  strong {display: block; font-style: italic;}
+  img {display: block; margin: 0 auto 10px;}
+}
 
-  @media (max-width: $screen-small-max) {
-    & {text-align: center; margin: 0 0 20px;}
-    img {display: block; margin: 0 auto 10px;}
-  }
-  
+.person {
   @media (min-width: $screen-medium) {
     & {
       height: 160px;
-      margin: 0 0 40px;
       padding: 40px 0 0 180px;
     }
     img {float: left; margin: -40px 0 0 -180px;}
+  }
+}
+
+.initiator {
+  & {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  strong {font-size: 16px; white-space: nowrap;}
+
+  @media (min-width: $screen-medium) {
+    & {float: left; display: inline; width: 160px; margin-bottom: 0;}
+    & + & {margin-left: 120px;}
   }
 }

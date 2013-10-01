@@ -1,0 +1,14 @@
+.speakers h3 {
+  font-size: 52px;
+}
+
+.speakers .person {
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $screen-medium) {text-align: left;}
+}
+
+.speakers .person strong {
+  font-size: 24px;
+}
