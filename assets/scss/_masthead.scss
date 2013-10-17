@@ -113,6 +113,7 @@
       @include button;
       background: $white;
       color: #004835;
+      outline: none;
     }
 
     &:hover, &:active, &:focus {background: transparent; color: $white;}

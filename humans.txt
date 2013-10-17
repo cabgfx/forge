@@ -28,3 +28,4 @@
       video.js by Brighcove, Inc. http://www.videojs.com/
       BigVideo.js by John Polacek http://dfcb.github.io/BigVideo.js/
       @placeholder polyfill by Mathias Bynens http://mths.be/placeholder
+      Ladda by Hakim El Hattab https://github.com/hakimel/Ladda
