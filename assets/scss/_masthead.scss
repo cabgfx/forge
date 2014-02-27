@@ -1,5 +1,5 @@
 .masthead {
-  & {color: $white;}
+  & {color: $white; font: 300 22px $base-font;}
 
   /* Fallback image banner when video isn't supported */
   .touch &, .no-js & {
@@ -7,23 +7,25 @@
     background-size: cover;
   }
 
-  p {margin: 40px 0; font: 300 22px $base-font;}
+  p {margin: 40px 0;}
 
   .lead {
-    & {
-      margin: 0;
-      font-size: 36px;
-      font-weight: 300;
-    }
+    & {margin: 0;}
 
-    strong {font-weight: 500;}
-
-    @media (max-width: $screen-small) {font-size: 24px;}
     @media (min-width: $screen-medium) {margin-right: 20px;}
   }
+}
 
-  @media (max-width: $screen-small-max) {.container {padding-bottom: 60px;}}
-  @media (min-width: $screen-medium) {.container {padding-top: 155px; padding-bottom: 175px;}}
+.masthead .container {
+  @media (max-width: $screen-small-max) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $screen-medium) {
+    padding-top: 155px;
+    padding-bottom: 175px;
+    padding-left: 230px;
+  }
 }
 
 .logo {
@@ -82,7 +84,6 @@
     @include transition(all .2s ease-in-out);
     @include box-sizing(border-box);
 
-    border-radius: 50px;
     border: 3px solid $white;
     font: italic bold 20px/1 $base-font;
   }
@@ -93,6 +94,7 @@
     background: transparent;
     color: inherit;
     outline: 0;
+    border-radius: 50px;
 
     @include placeholder {
       color: rgba($white, .5);
@@ -108,16 +110,16 @@
 
   button {
     & {
-      padding: 17px 30px;
+      @include button;
       background: $white;
       color: #004835;
-      text-transform: uppercase;
+      outline: none;
     }
 
     &:hover, &:active, &:focus {background: transparent; color: $white;}
 
     @media (max-width: $screen-small-max) {width: 100%;}
-    @media (min-width: $screen-medium) {position: absolute; right: 20px;}
+    @media (min-width: $screen-medium) {position: absolute; right: 38px;}
   }
 }
 
