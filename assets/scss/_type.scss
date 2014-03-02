@@ -16,7 +16,7 @@ h4 {
 }
 
 .lead {
-  & {font-size: 36px; font-weight: 300;}
+  & {font-size: 35px; font-weight: 300;}
   strong {font-weight: 500;}
 
   @media (max-width: $screen-small) { & {font-size: 24px;}}
