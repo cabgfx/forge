@@ -1,9 +1,9 @@
 .masthead {
-  & {
+  & {color: $white; font: 300 22px $base-font;}
+
+  .touch &, .no-js & {
     background: $red-bg url($img-path + 'header-bg.gif') no-repeat center top;
-    background-size: cover;
-    color: $white;
-    font: 300 22px $base-font;
+    background-size: cover;    
   }
 
   p {margin: 40px 0;}
@@ -98,8 +98,7 @@
     @extend .clearfix;
     position: relative;
     margin: 0 auto;
-    width: ($input-width*2) + ($input-border*2) + $input-margin;
-    text-align: center;    
+    text-align: center;
   }
 
   @media (max-width: $screen-small-max) {
@@ -145,7 +144,7 @@
 
     &:hover, &:active, &:focus {background: transparent; color: $white;}
 
-    @media (min-width: $screen-medium) {position: absolute; top: 0; right: 0;}
+    @media (min-width: $screen-medium) {position: absolute; top: 0; right: 127px;}
   }
 }
 

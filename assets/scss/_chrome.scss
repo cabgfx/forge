@@ -1,4 +1,11 @@
-body {font-family: $base-font; background: $sand; color: $textcolor;}
+/*
+*  Use masthead image as ultimate fallback/initial bg,
+*  for scenarios where video isn't loading in supported browsers
+*/
+body {font-family: $base-font; background: $sand url($img-path + 'header-bg.gif') no-repeat center top;}
+ 
+#big-video-wrap{overflow:hidden;position:fixed;height:100%;width:100%;top:0;left:0;z-index: -1;}
+#big-video-vid,#big-video-image{position:absolute;}
 
 .container {
   @extend .clearfix;
