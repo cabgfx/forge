@@ -1,4 +1,18 @@
 $(function() {
+  // BigVideo for non-touch devices
+  // var BV = new $.BigVideo({container: $('#top')});
+  // BV.init();
+  
+  // if (!Modernizr.touch) {
+  //   $('#big-video-wrap').hide();
+  // 
+  //   BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge.mp4', {ambient: true});
+  // 
+  //   BV.getPlayer().on('loadedmetadata', function() {
+  //     $('#big-video-wrap').fadeIn(1000);
+  //   })
+  // }
+
   var signup_spinner = Ladda.create( document.querySelector( 'button' ) );
 
   // Post signups to Mailchimp
