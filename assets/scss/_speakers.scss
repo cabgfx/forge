@@ -1,3 +1,9 @@
+.speakers {
+  @extend .venue;
+  background-image: none;
+  padding-bottom: 60px;
+}
+
 .speakers h3 {
   font-size: 52px;
 }

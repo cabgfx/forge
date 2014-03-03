@@ -4,19 +4,16 @@
 }
 
 h2, h3, h4 {
+  margin: 0 0 30px;
+  font-size: 36px;
   text-transform: uppercase;
   font-style: italic;
   letter-spacing: -.05em;
   text-align: center;
 }
 
-h4 {
-  margin: 0 0 30px;
-  font-size: 36px;
-}
-
 .lead {
-  & {font-size: 36px; font-weight: 300;}
+  & {font-size: 35px; font-weight: 300;}
   strong {font-weight: 500;}
 
   @media (max-width: $screen-small) { & {font-size: 24px;}}

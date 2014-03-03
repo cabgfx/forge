@@ -6,7 +6,7 @@ $(function() {
   if (!Modernizr.touch) {
     $('#big-video-wrap').hide();
   
-    BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge.mp4', {ambient: true});
+    BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge2.mp4', {ambient: true});
   
     BV.getPlayer().on('loadedmetadata', function() {
       $('#big-video-wrap').fadeIn(1000);
@@ -33,13 +33,13 @@ $(function() {
       
       $.post(url, function(rslt){
         $('#error-response, #mc-embedded-subscribe-form').remove();
-        $('#top').append('<p>' + signup_response + '</p>');
+        $('#top').append('<p class="response">' + signup_response + '</p>');
       });
       // Only show error msg once
     } else if ($('#error-response').length) {
       $('#error-response').fadeOut('fast').fadeIn('fast');
     } else {
-      $('#mc-embedded-subscribe-form').before('<p id="error-response">Sorry, but that email won\'t work. Please check your mail address and try again.</p>');
+      $('#mc-embedded-subscribe-form').before('<p id="error-response" class="response">Sorry, but that email won\'t work. Please check your email and try again.</p>');
     }
 
     return false;

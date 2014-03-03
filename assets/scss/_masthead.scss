@@ -1,18 +1,39 @@
 .masthead {
   & {color: $white; font: 300 22px $base-font;}
 
-  /* Fallback image banner when video isn't supported */
   .touch &, .no-js & {
-    background: $green-dark url($img-path + 'header-bg.jpg') no-repeat center top;
-    background-size: cover;
+    background: $red-bg url($img-path + 'header-bg.gif') no-repeat center top;
+    background-size: cover;    
   }
 
   p {margin: 40px 0;}
 
   .lead {
-    & {margin: 0;}
+    & {
+      margin: 60px 0 70px;
+      text-align: center;
+      text-shadow: 1px 2px $red-bg;
+    }
+    
+    a {
+      border-bottom: 2px solid $white;
+      font-weight: bold;
+      color: $white;
+      text-decoration: none;
 
-    @media (min-width: $screen-medium) {margin-right: 20px;}
+      @include transition(border .2s);
+      
+      &:hover, &:focus {border-color: transparent;}
+    }
+
+    @media (min-width: $screen-medium) {
+      a {
+        padding-left: 41px;
+        min-height: 36px;
+        display: inline-block;
+        background: url($img-path + 'icon-event.png') no-repeat left top;
+      }
+    }
   }
 }
 
@@ -22,25 +43,25 @@
   }
 
   @media (min-width: $screen-medium) {
-    padding-top: 155px;
-    padding-bottom: 175px;
-    padding-left: 230px;
+    padding-top: 131px;
+    padding-bottom: 244px;
   }
 }
 
 .logo {
-  $width: 183px;
-  $height: 307px;
+  $width: 494px;
+  $height: 226px;
 
   & {
-    margin: 0;
+    margin: 0 auto;
     line-height: 1;
     width: $width;
-    height: $height;    
+    height: $height;
+    text-align: center;
   }
 
   > a {
-    @include retina('logo', $width, $height);
+    @include retina('logo-full', $width, $height);
     color: #fff;
 
     /* Image replacement */
@@ -55,8 +76,8 @@
   }
 
   @media (max-width: $screen-small-max) {
-    $width: 40px;
-    $height: 68px;
+    $width: 183px;
+    $height: 307px;
 
     & {margin: 0 auto 30px;}
     &, > a {
@@ -64,32 +85,36 @@
       height: $height;
     }
     
-    > a {@include retina('logo-small', $width, $height);}
-  }
-
-  @media (min-width: $screen-small-max) {
-    position: absolute;
-    left: 0;
-    top: 230px;
+    > a {@include retina('logo', $width, $height);}
   }
 }
 
 .signup {
+  $input-width: 360px;
+  $input-margin: 20px;
+  $input-border: 3px;
+
   & {
     @extend .clearfix;
     position: relative;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (max-width: $screen-small-max) {
+    &, input, button {width: 100% !important;}
   }
 
   input, button {
-    @include transition(all .2s ease-in-out);
+    @include transition(all .1s ease-in-out);
     @include box-sizing(border-box);
 
-    border: 3px solid $white;
+    border: $input-border solid $white;
     font: italic bold 20px/1 $base-font;
   }
 
   input {
-    width: 100%;
+    width: $input-width;
     padding: 15px 20px;
     background: transparent;
     color: inherit;
@@ -97,7 +122,7 @@
     border-radius: 50px;
 
     @include placeholder {
-      color: rgba($white, .5);
+      color: rgba($white, .75);
       line-height: 1.25;
       text-transform: uppercase;
     }
@@ -105,6 +130,7 @@
     @media (max-width: $screen-small-max) {margin-bottom: 20px;}
     @media (min-width: $screen-medium) {
       &[type="email"] {padding-right: 100px;}
+      &:first-child {margin-right: $input-margin;}
     }
   }
 
@@ -112,18 +138,19 @@
     & {
       @include button;
       background: $white;
-      color: #004835;
+      color: $red-bg;
       outline: none;
     }
 
     &:hover, &:active, &:focus {background: transparent; color: $white;}
 
-    @media (max-width: $screen-small-max) {width: 100%;}
-    @media (min-width: $screen-medium) {position: absolute; right: 38px;}
+    @media (min-width: $screen-medium) {position: absolute; top: 0; right: 127px;}
   }
 }
 
+.response {text-align: center;}
+
 #error-response {
-  color: #e00;
+  color: $gray-darker;
   font-weight: bold;
 }
