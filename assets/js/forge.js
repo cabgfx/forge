@@ -1,17 +1,19 @@
 $(function() {
   // BigVideo for non-touch devices
-  var BV = new $.BigVideo({container: $('#top')});
-  BV.init();
+  if ($('body').hasClass('frontpage')) {
+    var BV = new $.BigVideo({container: $('#top')});
+    BV.init();
   
-  if (!Modernizr.touch) {
-    $('#big-video-wrap').hide();
+    if (!Modernizr.touch) {
+      $('#big-video-wrap').hide();
   
-    BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge2.mp4', {ambient: true});
+      BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge2.mp4', {ambient: true});
   
-    BV.getPlayer().on('loadedmetadata', function() {
-      $('#big-video-wrap').fadeIn(1000);
-    })
-  }
+      BV.getPlayer().on('loadedmetadata', function() {
+        $('#big-video-wrap').fadeIn(1000);
+      })
+    }
+  };
 
   var signup_spinner = Ladda.create( document.querySelector( 'button' ) );
 
@@ -32,8 +34,8 @@ $(function() {
       $('#submit').prop('disabled', true);
       
       $.post(url, function(rslt){
-        $('#error-response, #mc-embedded-subscribe-form').remove();
-        $('#top').append('<p class="response">' + signup_response + '</p>');
+        $('#error-response, #mc-embedded-subscribe-form').hide();
+        $('#mc-embedded-subscribe-form').before('<p class="response">' + signup_response + '</p>');
       });
       // Only show error msg once
     } else if ($('#error-response').length) {

@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title><?php if isset($title) echo "$title "; ?>Forge Copenhagen</title>
+    <title><?php if (isset($title)) echo "$title "; ?>Forge Copenhagen</title>
 
     <!--
       Made with <3 in Copenhagen, Denmark.
@@ -18,7 +18,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="<?php if isset($description) echo "$description"; ?>">
+    <meta name="description" content="<?php if (isset($description)) echo "$description"; ?>">
 
     <meta property="og:locale" content="da_DK">
     <meta property="og:title" content="Forge Copenhagen">

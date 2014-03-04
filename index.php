@@ -1,13 +1,13 @@
-<?php $description = 'We start the sort of activities that we\’d like to participate in ourselves.'; ?>
-<?php include 'templates/head'; ?>
+<?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
+<?php include 'templates/head.php'; ?>
 
-<body>
+<body class="frontpage">
   <header role="banner" class="masthead">
     <div class="container" id="top">
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        The next Forge event is coming <a href="https://www.facebook.com/events/591070834317509/?ref=22">June 20th, 2014.</a><br>
+        The next Forge event is coming <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th, 2014.</a><br>
         Sign up below to be notified when tickets go on sale.
       </p>
 
@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <main role="main" class="event-1-video">
+  <main role="main" class="intro">
     <div class="container container-copy">
       <h2>What is Forge?</h2>
       <p class="lead">
@@ -37,7 +37,7 @@
     </div>
   </main>
 
-  <section role="main" class="content">
+  <section role="complimentary" class="content">
     <div class="container container-copy">
       <h3 id="who-we-are">Who we are</h3>
 
@@ -82,4 +82,4 @@
     </div>
   </section>
 
-<?php include 'templates/footer'; ?>
+<?php include 'templates/footer.php'; ?>
