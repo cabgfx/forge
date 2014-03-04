@@ -1,5 +1,9 @@
 .venue {
-  text-align: center;
+  & {
+    @extend .clearfix;
+    text-align: center;
+    background: $sand url($img-path + 'venue-bg.gif') no-repeat center top;
+  }
   
   h2 {
     margin: 140px 0 0;

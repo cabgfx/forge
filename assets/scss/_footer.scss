@@ -1,14 +1,14 @@
 .contact {
   & {text-align: center;}
-  h4 {color: $green-neon;}
-  p {line-height: 28px;}
+  h4 {color: $red-heading;} 
+  p {line-height: 28px; color: $red-heading;}
   a {color: $white; text-decoration: none; font-weight: 500;}
   a:hover, a:focus {text-decoration: underline;}
 }
 
 .boilerplate {
   & {
-    margin: 60px 0 0;
+    margin: 60px 0;
     position: relative;
     text-align: center;
     
