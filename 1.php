@@ -4,12 +4,12 @@
 
 <body class="event-1">
   <header role="banner" class="masthead">
-    <nav>
-      <a href="/">Forge 1</a>
-      <a href="/1">Forge 2</a>  
-    </nav>
-
     <div class="container" id="top">
+      <nav>
+        <a href="/">Forge 2</a>
+        <a href="/1">Forge 1</a>
+      </nav>
+
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
