@@ -44,7 +44,7 @@
 
   @media (min-width: $screen-medium) {
     padding-top: 131px;
-    padding-bottom: 244px;
+    padding-bottom: 204px;
   }
 }
 
@@ -101,6 +101,7 @@
   }
 
   @media (max-width: $screen-small-max) {
+    & {margin-bottom: 60px;}
     &, input, button {width: 100% !important;}
   }
 
