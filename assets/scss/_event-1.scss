@@ -101,7 +101,6 @@
     font: italic 700 38px/1.2em $base-font;
     text-align: left;
     text-transform: none;
-    white-space: nowrap;
   }
   
   p {margin: 0; max-width: 400px; font-size: 16px;}
@@ -128,4 +127,22 @@
   }
   
   + .talk {margin-top: 40px;}
+}
+
+@media (max-width: $screen-small-max) {
+  .talk blockquote {
+    position: static;
+    max-width: none;
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $sand;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: $screen-medium) {
+  .talk h3 {white-space: nowrap;}
 }
