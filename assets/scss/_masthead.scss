@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $screen-medium) {
-    padding-top: 101px;
+    padding-top: 131px;
     padding-bottom: 244px;
   }
 }
@@ -76,16 +76,15 @@
   }
 
   @media (max-width: $screen-small-max) {
-    $width: 183px;
-    $height: 307px;
+    $width: 40px;
+    $height: 68px;
 
-    & {margin: 0 auto 30px;}
     &, > a {
       width: $width;
       height: $height;
     }
     
-    > a {@include retina('logo', $width, $height);}
+    > a {@include retina('logo-small', $width, $height);}
   }
 }
 

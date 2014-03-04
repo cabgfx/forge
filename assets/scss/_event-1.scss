@@ -1,9 +1,9 @@
 .event-1 {
-  & {background-image: url($img-path + 'header-bg.jpg');}
+  & {background-color: $green-dark; background-image: url($img-path + 'header-bg.jpg');}
 
   .touch &, .no-js & {
     .masthead {
-      background: $red-bg url($img-path + 'header-bg.jpg') no-repeat center top;
+      background: $green-dark url($img-path + 'header-bg.jpg') no-repeat center top;
       background-size: cover;
     }
   }
