@@ -30,6 +30,8 @@ body {font-family: $base-font; background: $sand url($img-path + 'header-bg.gif'
 
 nav {
   & {
+    position: relative;
+    z-index: 9999;
     margin: -64px 0 0;
     padding: 0;
     background: $textcolor;
