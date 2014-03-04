@@ -1,0 +1,152 @@
+.event-1 {
+  & {background-image: url($img-path + 'header-bg.jpg');}
+
+  .touch &, .no-js & {
+    .masthead {
+      background: $red-bg url($img-path + 'header-bg.jpg') no-repeat center top;
+      background-size: cover;
+    }
+  }
+
+  .masthead .lead {text-shadow: none;}
+  .masthead .logo {
+    $width: 605px;
+    $height: 226px;
+  
+    & {width: $width; height: $height;}
+    > a {
+      @include retina('logo-full-event-1', $width, $height);
+      width: $width; height: $height;
+    }
+  
+    @media (max-width: $screen-small-max) {
+      $width: 40px;
+      $height: 68px;
+  
+      &, > a {
+        width: $width;
+        height: $height;
+      }
+      
+      > a {@include retina('logo', $width, $height);}
+    }
+  }
+  .masthead .container {padding-bottom: 0;}
+
+  .signup {
+    & {color: $black;}
+    input, button {border-color: $black;}
+    input {
+      color: $black;
+      @include placeholder {color: rgba($black, .75);}
+    }
+    button {
+      & {background: $black; color: $sand;}
+      &:hover, &:active, &:focus {background: transparent; color: $black;}
+    }
+  }
+
+  .contact {
+    & {background: $green; color: $textcolor}
+    h4 {color: $green-neon;}
+    p {color: inherit;}
+  }
+}
+
+.newsletter-callout {
+  & {
+    margin: 70px auto; 
+    @extend .clearfix;
+    background: $sand;
+  }
+  
+  p {text-align: center;}
+}
+
+.sponsors {
+  & {
+    color: $gray;
+    background: $textcolor;
+    text-align: center;
+  }
+
+  p {margin-top: 20px; color: $gray; font-size: 12px;}
+  img {max-height: 60px; max-width: 100%;}
+  
+  @media (max-width: $screen-small-max) {
+    .sponsor {display: block; margin: 0 auto 30px; max-width: 200px;}
+    .sponsor img {display: block; max-height: none;}
+  }
+  @media (min-width: $screen-medium) {
+    .sponsor + .sponsor {margin-left: 60px;}
+  }
+}
+
+.talks {@extend .clearfix; background: $sand;}
+.talks h2 {margin: 80px auto; font-size: 65px;}
+
+.talk {
+  header {
+    & {
+      @extend .clearfix;
+      position: relative;
+      padding: 40px;
+      background: #fff;
+      color: $gray-dark;
+    }
+    
+    div {display: inline-block; vertical-align: middle;}
+  }
+
+  img {margin-right: 20px;}
+
+  h3 {
+    margin: 0;
+    font: italic 700 38px/1.2em $base-font;
+    text-align: left;
+    text-transform: none;
+  }
+  
+  p {margin: 0; max-width: 400px; font-size: 16px;}
+  a {color: $green; text-decoration: none;}
+  a:hover {text-decoration: underline;}
+
+  blockquote {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    margin: 0;
+    max-width: 300px;
+    font-size: 38px;
+    font-weight: 100;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  &.talk-mette-krogsgaard-hoejlund blockquote {
+    max-width: 250px;
+  }
+  
+  + .talk {margin-top: 40px;}
+}
+
+@media (max-width: $screen-small-max) {
+  .talk blockquote {
+    position: static;
+    max-width: none;
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $sand;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: $screen-medium) {
+  .talk h3 {white-space: nowrap;}
+}
