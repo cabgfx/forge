@@ -5,11 +5,6 @@
 <body class="event-1">
   <header role="banner" class="masthead">
     <div class="container" id="top">
-      <nav>
-        <a href="/">Forge 2</a>
-        <a href="/1">Forge 1</a>
-      </nav>
-
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
@@ -19,6 +14,8 @@
       </p>
     </div>
   </header>
+
+  <?php include 'templates/nav.php'; ?>
 
   <main role="main" class="talks">
     <div class="container">
@@ -82,7 +79,7 @@
     </div>
   </main>
 
-  <section role="complementary" class="newsletter-callout">
+  <aside role="complementary" class="newsletter-callout">
     <div class="container container-copy">
       <p class="lead">Be notified of new events&mdash;join the mailing list:</p>
 
@@ -96,9 +93,9 @@
       </form>
       <!--End mc_embed_signup-->
     </div>
-  </section>
+  </aside>
     
-  <aside role="complementary" class="sponsors">
+  <section role="banner" class="sponsors">
     <div class="container container-copy">
       <h4>This event was sponsored by</h4>
       <p>
@@ -107,6 +104,6 @@
         <a class="sponsor" href="https://podio.com/" target="_blank"><img src="assets/img/podio-logo.png" alt="Podio"></a>
       </p>
     </div>
-  </aside>
+  </section>
 
 <?php include 'templates/footer.php'; ?>

@@ -4,11 +4,6 @@
 <body class="frontpage">
   <header role="banner" class="masthead">
     <div class="container" id="top">
-      <nav>
-        <a href="/">Forge 2</a>
-        <a href="/1">Forge 1</a>  
-      </nav>
-
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
@@ -27,6 +22,8 @@
       <!--End mc_embed_signup-->
     </div>
   </header>
+
+  <?php include 'templates/nav.php'; ?>
 
   <main role="main" class="intro">
     <div class="container container-copy">

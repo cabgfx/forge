@@ -29,31 +29,34 @@ body {font-family: $base-font; background: $sand url($img-path + 'header-bg.gif'
 }
 
 nav {
-  & {margin: 0 auto 40px; text-align: center;}
+  & {
+    margin: -64px 0 0;
+    padding: 0;
+    background: $textcolor;
+    background: rgba($textcolor, .1);
+    color: $white;
+    text-align: center;
+    border-bottom: 1px solid $white;
+  }
   
   a {
     display: inline-block;
-    padding: 7px 20px;
+    padding: 20px 10px;
     color: #fff;
     text-decoration: none;
-    font: normal 16px $base-font;
-    border: 2px solid;
+    text-transform: uppercase;
+    font: 100 36px $base-font;
     opacity: .5;
-    border-radius: 20px;
-    letter-spacing: .05em;
-    box-shadow: 0 0 5px rgba($red-bg, .35);
-    text-shadow: 1px 1px 0 rgba($red-bg, .6);
+    letter-spacing: .1em;
 
     @include transition(opacity .15s);
     
     &:hover, &:focus {opacity: 1;}
     &:active {position: relative; top: 1px; left: 1px;}
 
-    .frontpage &[href="/"], .event-1 &[href="/1"] {opacity: 1;}
-  }
-  
-  @media (min-width: $screen-medium) {
-   & {position: relative; top: -81px; margin-bottom: 0;}
+    .frontpage &[href="/"], .event-1 &[href="/1"] {
+      opacity: 1;
+    }
   }
 }
 
