@@ -4,13 +4,18 @@
 
 <body class="event-1">
   <header role="banner" class="masthead">
+    <nav>
+      <a href="/">Forge 1</a>
+      <a href="/1">Forge 2</a>  
+    </nav>
+
     <div class="container" id="top">
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
         The very first forge event was held on October 25th, 2013.
-        More than 200 people got together and listened to 4 amazing talks, enjoyed food &amp; drink and a surplus of inspiration.
-        Relive the moment below.
+        More than 200 people got together and listened to 4 amazing talks, enjoyed food, drinks and a surplus of inspiration.
+        Rewind below.
       </p>
     </div>
   </header>

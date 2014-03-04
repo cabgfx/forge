@@ -10,10 +10,14 @@
 
   .masthead .lead {text-shadow: none;}
   .masthead .logo {
-    $width: 1893px;
-    $height: 307px;
+    $width: 605px;
+    $height: 226px;
   
-    > a {@include retina('logo-full-event-1', $width, $height);}
+    & {width: $width; height: $height;}
+    > a {
+      @include retina('logo-full-event-1', $width, $height);
+      width: $width; height: $height;
+    }
   
     @media (max-width: $screen-small-max) {
       $width: 40px;

@@ -3,6 +3,11 @@
 
 <body class="frontpage">
   <header role="banner" class="masthead">
+    <nav>
+      <a href="/">Forge 1</a>
+      <a href="/1">Forge 2</a>  
+    </nav>
+
     <div class="container" id="top">
       <h1 class="logo"><a href="/">Forge</a></h1>
     
