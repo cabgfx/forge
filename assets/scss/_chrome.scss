@@ -41,14 +41,15 @@ nav {
   
   a {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 30px 10px;
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-    font: 100 36px $base-font;
+    font: bold 14px $base-font;
     opacity: .5;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
+    text-transform: uppercase;
 
+    @include box-sizing(border-box);
     @include transition(opacity .15s);
     
     &:hover, &:focus {opacity: 1;}
