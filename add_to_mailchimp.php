@@ -15,7 +15,7 @@ $listId = 'INSERT LIST ID HERE';
 
 $api = new MCAPI($apikey);
  
-$merge_vars = array('EMAIL'=>$email, 'FNAME'=>$name);
+$merge_vars = array('EMAIL'=>$email, 'FNAME'=>urldecode($name));
 $retval = $api->listSubscribe( $listId, $email, $merge_vars, "html", false, false, false, true);
  
 if($retval){
