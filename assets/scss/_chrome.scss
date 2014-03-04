@@ -41,6 +41,8 @@ nav {
     opacity: .5;
     border-radius: 20px;
     letter-spacing: .05em;
+    box-shadow: 0 0 5px rgba($red-bg, .35);
+    text-shadow: 1px 1px 0 rgba($red-bg, .6);
 
     @include transition(opacity .15s);
     
