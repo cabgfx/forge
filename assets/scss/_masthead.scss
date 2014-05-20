@@ -134,18 +134,20 @@
     }
   }
 
-  button {
-    & {
-      @include button;
-      background: $white;
-      color: $red-bg;
-      outline: none;
-    }
-
-    &:hover, &:active, &:focus {background: transparent; color: $white;}
-
+  .button {
     @media (min-width: $screen-medium) {position: absolute; top: 0; right: 127px;}
   }
+}
+
+.button {
+  & {
+    @include button;
+    background: $white;
+    color: $red-bg;
+    outline: none;
+  }
+  
+  &:hover, &:active, &:focus {background: transparent; color: $white;}
 }
 
 .response {text-align: center;}
