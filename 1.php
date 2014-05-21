@@ -87,7 +87,7 @@
         <input type="text" value="" id="name" name="FNAME" required placeholder="Tell us your name">
         <input type="email" required placeholder="And your email" value="" name="EMAIL" id="email">
 
-         <button class="ladda-button" data-style="zoom-in" type="submit" id="submit" data-spinner-color="#004835">
+         <button class="button ladda-button" data-style="zoom-in" type="submit" id="submit" data-spinner-color="#004835">
            <span class="ladda-label">Ok</span>
          </button>
       </form>

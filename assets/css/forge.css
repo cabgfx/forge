@@ -1158,10 +1158,10 @@ h2, h3, h4 {
   .event-1 .signup input.placeholder {
     /* Class added by placeholder jQuery polyfill */
     color: rgba(37, 37, 37, 0.75); }
-.event-1 .signup button {
+.event-1 .signup .button {
   background: #252525;
   color: #eeecde; }
-.event-1 .signup button:hover, .event-1 .signup button:active, .event-1 .signup button:focus {
+.event-1 .signup .button:hover, .event-1 .signup .button:active, .event-1 .signup .button:focus {
   background: transparent;
   color: #252525; }
 .event-1 .contact {

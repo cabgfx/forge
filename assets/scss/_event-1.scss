@@ -46,7 +46,7 @@
       color: $black;
       @include placeholder {color: rgba($black, .75);}
     }
-    button {
+    .button {
       & {background: $black; color: $sand;}
       &:hover, &:active, &:focus {background: transparent; color: $black;}
     }
