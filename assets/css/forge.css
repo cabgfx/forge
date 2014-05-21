@@ -702,6 +702,9 @@ nav a {
     .content .col-2 {
       margin-right: 0;
       margin-left: 5%; } }
+  .content .newsletter-callout {
+    margin: 0 auto;
+    padding-bottom: 60px; }
 
 .contact {
   background: #c73932; }
@@ -1139,31 +1142,6 @@ h2, h3, h4 {
 @media (min-width: 992px) {
   .event-1 .masthead .container {
     padding-bottom: 98px; } }
-.event-1 .signup {
-  color: #252525; }
-.event-1 .signup input, .event-1 .signup button {
-  border-color: #252525; }
-.event-1 .signup input {
-  color: #252525; }
-  .event-1 .signup input::-webkit-input-placeholder {
-    color: rgba(37, 37, 37, 0.75); }
-  .event-1 .signup input:-moz-placeholder {
-    /* Firefox 18- */
-    color: rgba(37, 37, 37, 0.75); }
-  .event-1 .signup input::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(37, 37, 37, 0.75); }
-  .event-1 .signup input:-ms-input-placeholder {
-    color: rgba(37, 37, 37, 0.75); }
-  .event-1 .signup input.placeholder {
-    /* Class added by placeholder jQuery polyfill */
-    color: rgba(37, 37, 37, 0.75); }
-.event-1 .signup .button {
-  background: #252525;
-  color: #eeecde; }
-.event-1 .signup .button:hover, .event-1 .signup .button:active, .event-1 .signup .button:focus {
-  background: transparent;
-  color: #252525; }
 .event-1 .contact {
   background: #12ac85;
   color: #404040; }
@@ -1177,6 +1155,45 @@ h2, h3, h4 {
   background: #eeecde; }
 .newsletter-callout p {
   text-align: center; }
+
+.event-1 .signup,
+.newsletter-callout .signup {
+  color: #252525; }
+.event-1 .signup input, .event-1 .signup button,
+.newsletter-callout .signup input,
+.newsletter-callout .signup button {
+  border-color: #252525; }
+.event-1 .signup input,
+.newsletter-callout .signup input {
+  color: #252525; }
+  .event-1 .signup input::-webkit-input-placeholder,
+  .newsletter-callout .signup input::-webkit-input-placeholder {
+    color: rgba(37, 37, 37, 0.75); }
+  .event-1 .signup input:-moz-placeholder,
+  .newsletter-callout .signup input:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(37, 37, 37, 0.75); }
+  .event-1 .signup input::-moz-placeholder,
+  .newsletter-callout .signup input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(37, 37, 37, 0.75); }
+  .event-1 .signup input:-ms-input-placeholder,
+  .newsletter-callout .signup input:-ms-input-placeholder {
+    color: rgba(37, 37, 37, 0.75); }
+  .event-1 .signup input.placeholder,
+  .newsletter-callout .signup input.placeholder {
+    /* Class added by placeholder jQuery polyfill */
+    color: rgba(37, 37, 37, 0.75); }
+.event-1 .signup .button,
+.newsletter-callout .signup .button {
+  background: #252525;
+  color: #eeecde; }
+.event-1 .signup .button:hover, .event-1 .signup .button:active, .event-1 .signup .button:focus,
+.newsletter-callout .signup .button:hover,
+.newsletter-callout .signup .button:active,
+.newsletter-callout .signup .button:focus {
+  background: transparent;
+  color: #252525; }
 
 .sponsors {
   color: #9d9d99;

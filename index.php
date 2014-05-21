@@ -102,6 +102,17 @@
     </section>
   </main>
 
+  <section class="sponsors">
+    <div class="container container-copy">
+      <h4>Sponsored by</h4>
+      <p>
+        <a class="sponsor" href="http://designsociety.dk/" target="_blank"><img src="assets/img/ddc-logo.png" alt="Danish Design Centre"></a>
+        <a class="sponsor" href="https://www.iconfinder.com/" target="_blank"><img src="assets/img/iconfinder-logo.png" alt="Iconfinder"></a>
+        <a class="sponsor" href="https://podio.com/" target="_blank"><img src="assets/img/podio-logo.png" alt="Podio"></a>
+      </p>
+    </div>
+  </section>
+
   <section class="content">
     <div class="container container-copy">
       <h3 id="who-we-are">Who's behind this?</h3>
@@ -145,6 +156,14 @@
         </p>
       </div>
     </div>
+
+    <aside role="complementary" class="newsletter-callout">
+      <div class="container container-copy">
+        <p class="lead">Be notified of new events&mdash;join the mailing list:</p>
+
+        <?php include 'templates/signup.php'; ?>
+      </div>
+    </aside>
   </section>
 
 <?php include 'templates/footer.php'; ?>

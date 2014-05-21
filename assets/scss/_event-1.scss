@@ -39,19 +39,6 @@
     .masthead .container {padding-bottom: 98px;}
   }
 
-  .signup {
-    & {color: $black;}
-    input, button {border-color: $black;}
-    input {
-      color: $black;
-      @include placeholder {color: rgba($black, .75);}
-    }
-    .button {
-      & {background: $black; color: $sand;}
-      &:hover, &:active, &:focus {background: transparent; color: $black;}
-    }
-  }
-
   .contact {
     & {background: $green; color: $textcolor}
     h4 {color: $green-neon;}
@@ -65,8 +52,21 @@
     @extend .clearfix;
     background: $sand;
   }
-  
   p {text-align: center;}
+}
+
+.event-1 .signup,
+.newsletter-callout .signup {
+  & {color: $black;}
+  input, button {border-color: $black;}
+  input {
+    color: $black;
+    @include placeholder {color: rgba($black, .75);}
+  }
+  .button {
+    & {background: $black; color: $sand;}
+    &:hover, &:active, &:focus {background: transparent; color: $black;}
+  }
 }
 
 .sponsors {
