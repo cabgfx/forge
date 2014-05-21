@@ -1,4 +1,5 @@
 <?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
+<?php $ticket_url = 'http://billetto.dk/forge-2' ?>
 <?php include 'templates/head.php'; ?>
 
 <body class="frontpage">
@@ -7,41 +8,103 @@
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        The next Forge event is coming <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th, 2014.</a><br>
-        Sign up below to be notified when tickets go on sale.
+        Join your creative peers for an evening of inspiration, at the all-new Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just 150 seats, now available.
       </p>
 
-      <form action="http://forgecph.us7.list-manage.com/subscribe/post?u=f7462056ceb003d10ff72c090&amp;id=1752b37bfa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="signup" novalidate>
-        <input type="text" value="" id="name" name="FNAME" required placeholder="Tell us your name">
-        <input type="email" required placeholder="And your email" value="" name="EMAIL" id="email">
-
-         <button class="button ladda-button" data-style="zoom-in" type="submit" id="submit" data-spinner-color="#004835">
-           <span class="ladda-label">Ok</span>
-         </button>
-      </form>
-      <!--End mc_embed_signup-->
+      <p class="ticket-callout">
+        <a href="<?php echo $ticket_url ?>" class="button button-signup">Get your ticket today</a>
+      </p>
     </div>
   </header>
 
   <?php include 'templates/nav.php'; ?>
 
-  <main role="main" class="intro">
-    <div class="container container-copy">
-      <h2>What is Forge?</h2>
-      <p class="lead">
-        It’s a Copenhagen Con-Up&hellip; a Meet-Ference&hellip;<br>
-        You better just watch this video.
-      </p>
+  <main role="main">
+    <section class="speakers">
+      <div class="container container-copy">
+        <h3>Talks</h3>
+        <p class="lead">Amazing speakers that will move you to create</p>
 
-      <div class="video">
-        <iframe src="//player.vimeo.com/video/85478724?title=0&amp;byline=0&amp;portrait=0&amp;color=c73932" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p class="person">
+            <img src="assets/img/kai-brach-200.png" alt="Kai Brach">
+            <strong>Kai Brach</strong>
+            Publisher, editor and art director behind the publication Offscreen which explores the life and the work of people who use the internet and technology to be creative, solve problems, and build successful businesses.<br>
+            <a href="https://www.twitter.com/offscreenmag" target="_blank">@offscreenmag</a>
+          </p>
+
+          <p class="person">
+            <img src="assets/img/laura-jul-200.png" alt="Laura Jul">
+            <strong>Laura Jul</strong>
+            Creative Director and Partner at Copenhagen-based digital agency. 15 years of experience from the Danish Advertising, Digital and Direct Marketing Industry. She recently quit her job and was overwhelmed by the response.
+            <a href="https://twitter.com/laurajul" target="_blank">@LauraJul</a>
+          </p>
+
+          <p class="person">
+            <img src="assets/img/holger-lagerfeldt-200.png" alt="Holger Lagerfeldt">
+            <strong>Holger Lagerfeldt</strong>
+            World-renowned producer with 20 years in the music business. After a ten year stretch of making pop hits for Danish and international artists, he decided to branch out and expand his business in 2004.<br>
+            <a href="http://www.pag.dk" target="_blank">pag.dk</a>
+          </p>
+
+          <p class="person">
+            <img src="assets/img/thomas-madsen-mygdal-200.png" alt="Thomas Madsen-Mygdal">
+            <strong>Thomas Madsen-Mygdal</strong>
+            Troublemaker.
+            <a href="https://www.twitter.com/mygdal" target="_blank">@mygdal</a>
+          </p>
+
       </div>
-    </div>
+    </section>
+
+    <section class="details">
+      <div class="container">
+        <p class="column">
+          <strong>Friday</strong>
+          20th of June<br>
+          15:00&ndash;19:00
+        </p>
+        <p class="column">
+          <strong>Design Society</strong>
+          HC Andersens Boulevard 27<br>
+          1553 København V.
+        </p>
+        <p class="column">
+          <strong>Tickets</strong>
+          Admission 100 DKK<br>
+          Admission &amp; Loot 250 DKK
+        </p>
+
+        <aside role="complementary">
+          <p class="lead">
+            <a href="<?php echo $ticket_url ?>" class="button button-signup button-small button-signup-alternate">Get your ticket today</a>
+            Only 150 seats available
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container container-copy">
+        <h2>What is Forge?</h2>
+        <p class="lead">
+          It’s a Copenhagen Con-Up&hellip; a Meet-Ference&hellip;<br>
+          You better just watch this video.
+        </p>
+
+        <div class="video">
+          <iframe src="//player.vimeo.com/video/85478724?title=0&amp;byline=0&amp;portrait=0&amp;color=c73932" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        
+        <p class="lead">
+          <a href="/1">See talks from Forge #1</a>
+        </p>
+      </div>
+    </section>
   </main>
 
-  <section role="complimentary" class="content">
+  <section class="content">
     <div class="container container-copy">
-      <h3 id="who-we-are">Who we are</h3>
+      <h3 id="who-we-are">Who's behind this?</h3>
 
       <p class="col-1">
           We’re a band of passionate creative professionals who long for a place to come together and share stories.

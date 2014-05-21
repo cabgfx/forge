@@ -1,10 +1,10 @@
 .intro {
   & {@extend .clearfix; background: $sand;}
 
-  .lead {
-    text-align: center;
-    color: $gray-darker;
-  }
+  .lead {text-align: center;}
+
+  a {color: $textcolor; font-weight: 300; font-size: 24px;}
+  a:hover, a:focus {color: darken($red-callout, 20%);}
 }
 
 .video {

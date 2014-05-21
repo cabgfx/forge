@@ -584,12 +584,15 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, .container:before, .content:before, .signup:before, .intro:before, .initiator:before, .person:before, .newsletter-callout:before, .talks:before, .talk header:before,
+.clearfix:before, .container:before, .content:before, .signup:before, .intro:before, .venue:before, .speakers:before, .details:before, .initiator:before, .person:before, .newsletter-callout:before, .talks:before, .talk header:before,
 .clearfix:after,
 .container:after,
 .content:after,
 .signup:after,
 .intro:after,
+.venue:after,
+.speakers:after,
+.details:after,
 .initiator:after,
 .person:after,
 .newsletter-callout:after,
@@ -600,14 +603,14 @@ textarea {
   display: table;
   /* 2 */ }
 
-.clearfix:after, .container:after, .content:after, .signup:after, .intro:after, .initiator:after, .person:after, .newsletter-callout:after, .talks:after, .talk header:after {
+.clearfix:after, .container:after, .content:after, .signup:after, .intro:after, .venue:after, .speakers:after, .details:after, .initiator:after, .person:after, .newsletter-callout:after, .talks:after, .talk header:after {
   clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.clearfix, .container, .content, .signup, .intro, .initiator, .person, .newsletter-callout, .talks, .talk header {
+.clearfix, .container, .content, .signup, .intro, .venue, .speakers, .details, .initiator, .person, .newsletter-callout, .talks, .talk header {
   *zoom: 1; }
 
 /*
@@ -692,7 +695,13 @@ nav a {
   line-height: 28px; }
   @media (min-width: 992px) {
     .content .container-copy {
-      padding: 100px 0; } }
+      padding: 100px 0; }
+    .content .col-1, .content .col-2 {
+      margin-top: 30px;
+      text-align: justify; }
+    .content .col-2 {
+      margin-right: 0;
+      margin-left: 5%; } }
 
 .contact {
   background: #c73932; }
@@ -729,7 +738,8 @@ h2, h3, h4 {
 .masthead .lead {
   margin: 60px 0 70px;
   text-align: center;
-  text-shadow: 1px 2px #c73932; }
+  text-shadow: 1px 2px #c73932;
+  line-height: 1.5em; }
 .masthead .lead a {
   border-bottom: 2px solid #faf9f2;
   font-weight: bold;
@@ -746,14 +756,14 @@ h2, h3, h4 {
     padding-left: 41px;
     min-height: 36px;
     display: inline-block;
-    background: url("../img/icon-event.png") no-repeat left top; } }
+    background: url("../img/icon-event.png") no-repeat left center; } }
 
 @media (max-width: 991px) {
   .masthead .container {
     padding-bottom: 60px; } }
 @media (min-width: 992px) {
   .masthead .container {
-    padding-top: 131px;
+    padding-top: 81px;
     padding-bottom: 204px; } }
 
 .logo {
@@ -847,6 +857,9 @@ h2, h3, h4 {
       padding-right: 100px; }
     .signup input:first-child {
       margin-right: 20px; } }
+.signup .button:hover, .signup .button:active, .signup .button:focus {
+  background: transparent;
+  color: #faf9f2; }
 @media (min-width: 992px) {
   .signup .button {
     position: absolute;
@@ -863,9 +876,34 @@ h2, h3, h4 {
   background: #faf9f2;
   color: #c73932;
   outline: none; }
-.button:hover, .button:active, .button:focus {
-  background: transparent;
-  color: #faf9f2; }
+
+.ticket-callout {
+  text-align: center; }
+
+.button-small {
+  padding: 9px 21px;
+  font-size: 14px; }
+
+.button-signup {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  margin: 0 auto; }
+  .no-touch .button-signup:hover, .no-touch .button-signup:focus {
+    background: #fff;
+    box-shadow: 0 8px 2px -4px #a30000; }
+  .button-signup:active {
+    box-shadow: none;
+    position: relative;
+    top: 1px;
+    left: 1px; }
+
+.button-signup-alternate {
+  color: #252525; }
+  .no-touch .button-signup-alternate:hover, .no-touch .button-signup-alternate:focus {
+    box-shadow: 0 3px 2px -1px #252525; }
 
 .response {
   text-align: center; }
@@ -877,8 +915,13 @@ h2, h3, h4 {
 .intro {
   background: #eeecde; }
 .intro .lead {
-  text-align: center;
-  color: #373737; }
+  text-align: center; }
+.intro a {
+  color: #404040;
+  font-weight: 300;
+  font-size: 24px; }
+.intro a:hover, .intro a:focus {
+  color: #ef0000; }
 
 .video {
   position: relative;
@@ -891,6 +934,99 @@ h2, h3, h4 {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.venue, .speakers {
+  text-align: center;
+  background: #eeecde url("../img/venue-bg.gif") no-repeat center top; }
+.venue h2, .speakers h2 {
+  margin: 140px 0 0;
+  font-size: 108px;
+  line-height: 1; }
+  @media (max-width: 991px) {
+    .venue h2, .speakers h2 {
+      font-size: 36px; } }
+
+.details {
+  margin: 0;
+  background: #404040;
+  color: #faf9f2; }
+  @media (min-width: 992px) {
+    .details {
+      background: #404040 url("../img/event-details-map-bg.gif") no-repeat center top; } }
+.details p {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300; }
+  .details p strong {
+    display: block;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold; }
+.details .lead {
+  color: #9d9d99; }
+@media (max-width: 991px) {
+  .details aside {
+    margin-top: 30px; }
+  .details p:first-child {
+    margin-top: 0; }
+  .details .lead {
+    margin-bottom: 0; } }
+@media (min-width: 992px) {
+  .details .column {
+    float: left;
+    display: inline;
+    margin: 4.5%; }
+  .details aside {
+    float: left;
+    width: 100%; }
+  .details .lead {
+    text-align: center; }
+  .details .button {
+    margin-right: .5em; } }
+
+.speakers {
+  background-image: none;
+  padding: 30px 0 60px; }
+
+.speakers .lead {
+  text-align: center; }
+
+.speakers .person {
+  font-size: 18px;
+  line-height: 24px; }
+  @media (min-width: 992px) {
+    .speakers .person {
+      text-align: left; } }
+
+@media (min-width: 992px) {
+  .speakers .person {
+    margin: 0 4.5% 30px;
+    height: auto;
+    padding-top: 60px;
+    border-top: 1px solid #e2dec6;
+    padding-left: 220px; }
+
+  .speakers .person:last-child {
+    margin-bottom: 0; }
+
+  .speakers .person img {
+    margin-top: -30px;
+    margin-left: -220px; }
+
+  .speakers .person:nth-child(even) {
+    padding-left: 0;
+    padding-right: 220px; }
+  .speakers .person:nth-child(even) img {
+    float: right;
+    margin-left: 0;
+    margin-right: -220px; } }
+.speakers .person strong {
+  margin-bottom: 5px;
+  line-height: 1.1em;
+  font-size: 24px; }
 
 .initiators {
   float: left;
@@ -932,14 +1068,14 @@ h2, h3, h4 {
 .initiator strong {
   font-size: 16px;
   white-space: nowrap; }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .initiator {
     float: left;
     display: inline;
-    width: 160px;
+    width: 16%;
     margin-bottom: 0; }
   .initiator + .initiator {
-    margin-left: 120px; } }
+    margin-left: 11%; } }
 
 .contact {
   text-align: center; }
