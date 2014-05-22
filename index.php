@@ -61,7 +61,7 @@
         <p class="column">
           <strong>Friday</strong>
           20th of June<br>
-          15:00&ndash;19:00
+          15:00&ndash;20:00
         </p>
         <p class="column">
           <strong>Design Society</strong>
@@ -106,9 +106,10 @@
     <div class="container container-copy">
       <h4>Sponsored by</h4>
       <p>
-        <a class="sponsor" href="http://designsociety.dk/" target="_blank"><img src="assets/img/ddc-logo.png" alt="Danish Design Centre"></a>
+        <a class="sponsor" href="http://designsociety.dk/" target="_blank"><img src="assets/img/design-society-logo.png" alt="Design Society"></a>
         <a class="sponsor" href="https://www.iconfinder.com/" target="_blank"><img src="assets/img/iconfinder-logo.png" alt="Iconfinder"></a>
         <a class="sponsor" href="https://podio.com/" target="_blank"><img src="assets/img/podio-logo.png" alt="Podio"></a>
+        <a class="sponsor" href="http://robo.cat/" target="_blank"><img src="assets/img/robocat-logo.png" alt="Robocat"></a>
       </p>
     </div>
   </section>
