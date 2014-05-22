@@ -41,7 +41,12 @@
       margin-top: 30px;
     }
     p:first-child {margin-top: 0;}
-    .lead {margin-bottom: 0;}
+    .lead {margin-bottom: 0; text-align: center;
+    }
+    .button {
+      display: block;
+      margin-bottom: 4px;
+    }
   }
 
   @media (min-width: $screen-medium) {

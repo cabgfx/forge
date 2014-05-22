@@ -51,7 +51,7 @@
           <p class="person">
             <img src="assets/img/thomas-madsen-mygdal-200.png" alt="Thomas Madsen-Mygdal">
             <strong>Thomas Madsen-Mygdal</strong>
-            Troublemaker.
+            Entrepreneur, Angel Investor, Troublemaker, Activist. Always restless about reinventing things for the world we live in today. Lover of great conversations, spaces and people&mdash;and of augmenting humans. Expect something different.
             <a href="https://www.twitter.com/mygdal" target="_blank">@mygdal</a>
           </p>
 

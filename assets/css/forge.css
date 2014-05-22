@@ -976,7 +976,11 @@ h2, h3, h4 {
   .details p:first-child {
     margin-top: 0; }
   .details .lead {
-    margin-bottom: 0; } }
+    margin-bottom: 0;
+    text-align: center; }
+  .details .button {
+    display: block;
+    margin-bottom: 4px; } }
 @media (min-width: 992px) {
   .details .column {
     float: left;
@@ -1019,10 +1023,10 @@ h2, h3, h4 {
     margin-top: -30px;
     margin-left: -220px; }
 
-  .speakers .person:nth-child(even) {
+  .speakers .person:nth-child(odd) {
     padding-left: 0;
     padding-right: 220px; }
-  .speakers .person:nth-child(even) img {
+  .speakers .person:nth-child(odd) img {
     float: right;
     margin-left: 0;
     margin-right: -220px; } }

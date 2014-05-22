@@ -34,7 +34,7 @@
     margin-left: -$img-width;
   }
   
-  .speakers .person:nth-child(even) {
+  .speakers .person:nth-child(odd) {
     & {padding-left: 0; padding-right: $img-width;}
     img {float: right; margin-left: 0;
       margin-right: -$img-width;}
