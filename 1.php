@@ -91,7 +91,7 @@
     <div class="container container-copy">
       <h4>This event was sponsored by</h4>
       <p>
-        <a class="sponsor" href="http://designsociety.dk/" target="_blank"><img src="assets/img/ddc-logo.png" alt="Danish Design Centre"></a>
+        <a class="sponsor" href="http://designsociety.dk/" target="_blank"><img src="assets/img/design-society-logo.png" alt="Design Society"></a>
         <a class="sponsor" href="https://www.iconfinder.com/" target="_blank"><img src="assets/img/iconfinder-logo.png" alt="Iconfinder"></a>
         <a class="sponsor" href="https://podio.com/" target="_blank"><img src="assets/img/podio-logo.png" alt="Podio"></a>
       </p>
