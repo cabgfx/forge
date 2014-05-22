@@ -1,5 +1,7 @@
 <?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
 <?php $ticket_url = 'http://billetto.dk/forge-2' ?>
+<?php $ticket_availability = '150' ?>
+
 <?php include 'templates/head.php'; ?>
 
 <body class="frontpage">
@@ -8,7 +10,7 @@
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just 150 seats, now available.
+        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just <?php echo $ticket_availability ?> seats, now available.
       </p>
 
       <p class="ticket-callout">
@@ -77,7 +79,7 @@
         <aside role="complementary">
           <p class="lead">
             <a href="<?php echo $ticket_url ?>" class="button button-signup button-small button-signup-alternate">Get your ticket today</a>
-            Only 150 seats available
+            Only <?php echo $ticket_availability ?> seats available
           </p>
         </aside>
       </div>
