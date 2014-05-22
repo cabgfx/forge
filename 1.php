@@ -83,15 +83,7 @@
     <div class="container container-copy">
       <p class="lead">Be notified of new events&mdash;join the mailing list:</p>
 
-      <form action="http://forgecph.us7.list-manage.com/subscribe/post?u=f7462056ceb003d10ff72c090&amp;id=1752b37bfa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="signup" novalidate>
-        <input type="text" value="" id="name" name="FNAME" required placeholder="Tell us your name">
-        <input type="email" required placeholder="And your email" value="" name="EMAIL" id="email">
-
-         <button class="ladda-button" data-style="zoom-in" type="submit" id="submit" data-spinner-color="#004835">
-           <span class="ladda-label">Ok</span>
-         </button>
-      </form>
-      <!--End mc_embed_signup-->
+      <?php include 'templates/signup.php'; ?>
     </div>
   </aside>
     
@@ -99,7 +91,7 @@
     <div class="container container-copy">
       <h4>This event was sponsored by</h4>
       <p>
-        <a class="sponsor" href="http://designsociety.dk/" target="_blank"><img src="assets/img/ddc-logo.png" alt="Danish Design Centre"></a>
+        <a class="sponsor" href="http://designsociety.dk/" target="_blank"><img src="assets/img/design-society-logo.png" alt="Design Society"></a>
         <a class="sponsor" href="https://www.iconfinder.com/" target="_blank"><img src="assets/img/iconfinder-logo.png" alt="Iconfinder"></a>
         <a class="sponsor" href="https://podio.com/" target="_blank"><img src="assets/img/podio-logo.png" alt="Podio"></a>
       </p>

@@ -13,6 +13,7 @@
       margin: 60px 0 70px;
       text-align: center;
       text-shadow: 1px 2px $red-bg;
+      line-height: 1.5em;
     }
     
     a {
@@ -31,7 +32,7 @@
         padding-left: 41px;
         min-height: 36px;
         display: inline-block;
-        background: url($img-path + 'icon-event.png') no-repeat left top;
+        background: url($img-path + 'icon-event.png') no-repeat left center;
       }
     }
   }
@@ -43,7 +44,7 @@
   }
 
   @media (min-width: $screen-medium) {
-    padding-top: 131px;
+    padding-top: 81px;
     padding-bottom: 204px;
   }
 }
@@ -135,6 +136,7 @@
   }
 
   .button {
+    &:hover, &:active, &:focus {background: transparent; color: $white;}
     @media (min-width: $screen-medium) {position: absolute; top: 0; right: 127px;}
   }
 }
@@ -146,8 +148,38 @@
     color: $red-bg;
     outline: none;
   }
+}
+
+.ticket-callout {
+  text-align: center;
+}
+
+.button-small {
+  padding: 9px 21px;
+  font-size: 14px;
+}
+
+.button-signup {
+  @include transition(all .3s);
   
-  &:hover, &:active, &:focus {background: transparent; color: $white;}
+  display: inline-block;
+  margin: 0 auto;
+
+  .no-touch &:hover, .no-touch &:focus {
+    background: #fff;
+    box-shadow: 0 8px 2px -4px darken($red-callout, 35%);
+  }
+  &:active {
+    box-shadow: none;
+    position: relative; top: 1px; left: 1px;
+  }
+}
+
+.button-signup-alternate {
+  color: $black;
+  .no-touch &:hover, .no-touch &:focus {
+    box-shadow: 0 3px 2px -1px $black;
+  }  
 }
 
 .response {text-align: center;}

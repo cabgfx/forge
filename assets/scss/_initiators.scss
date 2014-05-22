@@ -37,8 +37,8 @@
 
   strong {font-size: 16px; white-space: nowrap;}
 
-  @media (min-width: $screen-medium) {
-    & {float: left; display: inline; width: 160px; margin-bottom: 0;}
-    & + & {margin-left: 120px;}
+  @media (min-width: $screen-small) {
+    & {float: left; display: inline; width: 16%; margin-bottom: 0;}
+    & + & {margin-left: 11%;}
   }
 }

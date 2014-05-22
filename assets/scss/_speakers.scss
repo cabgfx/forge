@@ -1,20 +1,48 @@
 .speakers {
   @extend .venue;
   background-image: none;
-  padding-bottom: 60px;
+  padding: 30px 0 60px;
 }
 
-.speakers h3 {
-  font-size: 52px;
+
+.speakers .lead {
+  text-align: center;
 }
 
 .speakers .person {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
 
   @media (min-width: $screen-medium) {text-align: left;}
 }
 
+@media (min-width: $screen-medium) {
+  $img-width: 220px;
+
+  .speakers .person {
+    margin: 0 4.5% 30px;
+    height: auto;
+    padding-top: 60px;
+    border-top: 1px solid darken($sand, 7%);
+    padding-left: $img-width;
+  }
+  .speakers .person:last-child {
+    margin-bottom: 0;
+  }
+  .speakers .person img {
+    margin-top: -30px;
+    margin-left: -$img-width;
+  }
+  
+  .speakers .person:nth-child(even) {
+    & {padding-left: 0; padding-right: $img-width;}
+    img {float: right; margin-left: 0;
+      margin-right: -$img-width;}
+  }
+}
+
 .speakers .person strong {
+  margin-bottom: 5px;
+  line-height: 1.1em;
   font-size: 24px;
 }

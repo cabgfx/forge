@@ -14,41 +14,40 @@
   }
 }
 
-.button {
-  @include button;
-  @include transition(all .3s);
-
-  display: inline-block;
-  background: $red-callout;
-  color: $sand;
-  font-size: 20px;
-
-  .no-touch &:hover, .no-touch &:focus {
-    background: darken($red-callout, 20%);
-  }
-  &:active {
-    position: relative; top: 1px; left: 1px;
-  }
-}
-
 .details {
   & {
     @extend .clearfix;
-    
-    margin: 140px 0 0;
-    background: $textcolor url($img-path + 'event-details-map-bg.gif') no-repeat center top;
+    margin: 0;
+    background: $textcolor;
     color: $white;
+
+    @media (min-width: $screen-medium) {
+      background: $textcolor url($img-path + 'event-details-map-bg.gif') no-repeat center top;
+    }
   }
 
   p {
     @include box-sizing(border-box);
-
-    float: left; display: inline;
-    margin: 4.5%;
     text-align: left;
     font-size: 20px;
     font-weight: 300;
-
     strong {display: block; font-size: 24px; font-style: italic; font-weight: bold;}
+  }
+
+  .lead {color: $gray;}
+
+  @media (max-width: $screen-medium - 1) {
+    aside {
+      margin-top: 30px;
+    }
+    p:first-child {margin-top: 0;}
+    .lead {margin-bottom: 0;}
+  }
+
+  @media (min-width: $screen-medium) {
+    .column {float: left; display: inline; margin: 4.5%;}  
+    aside {float: left; width: 100%;}
+    .lead {text-align: center;}
+    .button {margin-right: .5em;}
   }
 }
