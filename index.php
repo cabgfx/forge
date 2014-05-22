@@ -1,6 +1,6 @@
 <?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
 <?php $ticket_url = 'http://billetto.dk/forge-2' ?>
-<?php $ticket_availability = '143' ?>
+<?php $ticket_availability = '130' ?>
 
 <?php include 'templates/head.php'; ?>
 
@@ -10,7 +10,7 @@
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just <?php echo $ticket_availability ?> seats, now available.
+        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just <?php echo $ticket_availability ?> seats, available now.
       </p>
 
       <p class="ticket-callout">
@@ -37,7 +37,7 @@
           <p class="person">
             <img src="assets/img/laura-jul-200.png" alt="Laura Jul">
             <strong>Laura Jul</strong>
-            Creative Director and Partner at Copenhagen-based digital agency. 15 years of experience from the Danish Advertising, Digital and Direct Marketing Industry. She recently quit her job and was overwhelmed by the response.
+            Creative Director at Copenhagen-based digital agency. 15 years of experience from the Danish Advertising, Digital and Direct Marketing Industry. She recently quit her job and was overwhelmed by the response.
             <a href="https://twitter.com/laurajul" target="_blank">@LauraJul</a>
           </p>
 
