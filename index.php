@@ -10,7 +10,7 @@
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just <?php echo $ticket_availability ?> seats left, so&hellip;
+        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just <del>150</del> <strong><?php echo $ticket_availability ?></strong> seats left, so&hellip;
       </p>
 
       <p class="ticket-callout">
