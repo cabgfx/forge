@@ -1,6 +1,6 @@
 <?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
 <?php $ticket_url = 'http://billetto.dk/forge-2' ?>
-<?php $ticket_availability = '52' ?>
+<?php $ticket_availability = '47' ?>
 
 <?php include 'templates/head.php'; ?>
 
