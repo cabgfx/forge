@@ -24,8 +24,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src=""><\/script>')</script>
     <script src="http://vjs.zencdn.net/4.1/video.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/forge.js"></script>
+    <script src="assets/js/forge.min.js"></script>
 
     <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
