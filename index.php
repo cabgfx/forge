@@ -1,6 +1,6 @@
 <?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
 <?php $ticket_url = 'http://billetto.dk/forge-2' ?>
-<?php $ticket_availability = '9' ?>
+<?php $ticket_availability = '0' ?>
 
 <?php include 'templates/head.php'; ?>
 
@@ -10,11 +10,11 @@
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Just <del>150</del> <strong><?php echo $ticket_availability ?></strong> seats left, so&hellip;
+        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Follow the action on <b>#forgecph</b>
       </p>
 
       <p class="ticket-callout">
-        <a href="<?php echo $ticket_url ?>" class="button button-signup">Get your ticket today</a>
+        <a href="#stay-updated<?php // echo $ticket_url ?>" class="button button-signup" title="Sign up for the mailing list, to be notified when Forge 3 is happening.">Notify me next time</a>
       </p>
     </div>
   </header>
@@ -162,7 +162,7 @@
 
     <aside role="complementary" class="newsletter-callout">
       <div class="container container-copy">
-        <p class="lead">Be notified of new events&mdash;join the mailing list:</p>
+        <p class="lead" id="stay-updated">Be notified of new events&mdash;join the mailing list:</p>
 
         <?php include 'templates/signup.php'; ?>
       </div>
