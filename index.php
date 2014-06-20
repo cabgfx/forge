@@ -1,6 +1,8 @@
 <?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
-<?php $ticket_url = 'http://billetto.dk/forge-2' ?>
+<?php $ticket_url = '#stay-updated' ?>
 <?php $ticket_availability = '0' ?>
+<?php $button_help_text = 'Sign up for the mailing list, to be notified when Forge 3 is happening.' ?>
+<?php $button_callout = 'Notify me next time' ?>
 
 <?php include 'templates/head.php'; ?>
 
@@ -14,7 +16,7 @@
       </p>
 
       <p class="ticket-callout">
-        <a href="#stay-updated<?php // echo $ticket_url ?>" class="button button-signup" title="Sign up for the mailing list, to be notified when Forge 3 is happening.">Notify me next time</a>
+        <a href="<?php echo $ticket_url ?>" class="button button-signup" title="<?php echo $button_help_text ?>"><?php echo $button_callout ?></a>
       </p>
     </div>
   </header>
@@ -78,8 +80,8 @@
 
         <aside role="complementary">
           <p class="lead">
-            <a href="<?php echo $ticket_url ?>" class="button button-signup button-small button-signup-alternate">Get your ticket today</a>
-            Only <?php echo $ticket_availability ?> seats left
+            <a href="<?php echo $ticket_url ?>" class="button button-signup button-small button-signup-alternate" title="<?php echo $button_help_text ?>"><?php echo $button_callout ?></a>
+            No ticket? Join us on #forgecph
           </p>
         </aside>
       </div>
