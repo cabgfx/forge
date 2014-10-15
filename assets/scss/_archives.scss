@@ -40,6 +40,29 @@
       }
     }
   }
+  
+  .masthead .logo {
+    $width: 605px;
+    $height: 226px;
+  
+    & {width: $width; height: $height;}
+    > a {
+      @include retina('logo-full-event-2', $width, $height);
+      width: $width; height: $height;
+    }
+  
+    @media (max-width: $screen-small-max) {
+      $width: 40px;
+      $height: 68px;
+  
+      &, > a {
+        width: $width;
+        height: $height;
+      }
+      
+      > a {@include retina('logo', $width, $height);}
+    }
+  }
 
   .button {
     & {
