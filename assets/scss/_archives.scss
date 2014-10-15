@@ -1,3 +1,88 @@
+.event-2 {
+  & {background-color: $sand; background-image: url($img-path + 'header-bg.gif');}
+
+  .masthead {
+    & {color: $white; font: 300 22px $base-font;}
+  
+    .touch &, .no-js & {
+      background: $red-bg url($img-path + 'header-bg.gif') no-repeat center top;
+      background-size: cover;    
+    }
+  
+    p {margin: 40px 0;}
+  
+    .lead {
+      & {
+        margin: 60px 0 70px;
+        text-align: center;
+        text-shadow: 1px 2px $red-bg;
+        line-height: 1.5em;
+      }
+      
+      a {
+        border-bottom: 2px solid $white;
+        font-weight: bold;
+        color: $white;
+        text-decoration: none;
+  
+        @include transition(border .2s);
+        
+        &:hover, &:focus {border-color: transparent;}
+      }
+  
+      @media (min-width: $screen-medium) {
+        a {
+          padding-left: 41px;
+          min-height: 36px;
+          display: inline-block;
+          background: url($img-path + 'icon-event.png') no-repeat left center;
+        }
+      }
+    }
+  }
+
+  .button {
+    & {
+      @include button;
+      background: $white;
+      color: $red-bg;
+      outline: none;
+    }
+  }
+
+  .button-signup {
+    @include transition(all .3s);
+    
+    display: inline-block;
+    margin: 0 auto;
+  
+    .no-touch &:hover, .no-touch &:focus {
+      background: #fff;
+      box-shadow: 0 8px 2px -4px darken($red-callout, 35%);
+    }
+    &:active {
+      box-shadow: none;
+      position: relative; top: 1px; left: 1px;
+    }
+  }
+  
+  .button-signup-alternate {
+    color: $black;
+    .no-touch &:hover, .no-touch &:focus {
+      box-shadow: 0 3px 2px -1px $black;
+    }  
+  }
+
+  .contact {
+    & {text-align: center; background: $red-bg;}
+    h4 {color: $red-heading;} 
+    p {line-height: 28px; color: $red-heading;}
+    a {color: $white; text-decoration: none; font-weight: 500;}
+    a:hover, a:focus {text-decoration: underline;}
+  }
+
+}
+
 .event-1 {
   & {background-color: $sand; background-image: url($img-path + 'header-bg.jpg');}
 
@@ -48,7 +133,8 @@
 
 .newsletter-callout {
   & {
-    margin: 70px auto; 
+    margin: 0 auto;
+    padding: 70px 0;
     @extend .clearfix;
     background: $sand;
   }
@@ -84,7 +170,7 @@
     .sponsor img {display: block; max-height: none;}
   }
   @media (min-width: $screen-medium) {
-    .sponsor + .sponsor {margin-left: 60px;}
+    .sponsor + .sponsor {margin-left: 40px;}
   }
 }
 

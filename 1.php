@@ -2,7 +2,7 @@
 <?php $description = 'Talks and flashbacks from the very first Forge event, at Danish Design Society, October 25 2013.'; ?>
 <?php include 'templates/head.php'; ?>
 
-<body class="event-1">
+<body class="video-bg event-1" data-video-url="//s3-eu-west-1.amazonaws.com/forgecph/Forge.mp4">
   <header role="banner" class="masthead">
     <div class="container" id="top">
       <h1 class="logo"><a href="/">Forge</a></h1>
@@ -15,7 +15,11 @@
     </div>
   </header>
 
-  <?php include 'templates/nav.php'; ?>
+  <nav>
+    <a href="/1" class="active">Forge 1</a>
+    <a href="/2">Forge 2</a>
+    <a href="/">Forge 3</a>
+  </nav>
 
   <main role="main" class="talks">
     <div class="container">

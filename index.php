@@ -6,88 +6,28 @@
 
 <?php include 'templates/head.php'; ?>
 
-<body class="frontpage">
+<body class="video-bg" data-video-url="//s3-eu-west-1.amazonaws.com/forgecph/Forge3.mp4">
   <header role="banner" class="masthead">
     <div class="container" id="top">
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        Join your creative peers for an evening of inspiration, at the second Forge event, <a href="https://www.facebook.com/events/591070834317509/?ref=22" title="Details on facebook">June 20th.</a> Follow the action on <b>#forgecph</b>
+        The next Forge event is coming <b>Winter 2015</b>.<br>
+        Relive <a href="/2" title="Talks &amp; highlights">Forge 2</a> or sign up below to be notified about tickets.
       </p>
 
-      <p class="ticket-callout">
-        <a href="<?php echo $ticket_url ?>" class="button button-signup" title="<?php echo $button_help_text ?>"><?php echo $button_callout ?></a>
-      </p>
+      <?php include 'templates/signup.php'; ?>
     </div>
   </header>
 
-  <?php include 'templates/nav.php'; ?>
+  <nav>
+    <a href="/1">Forge 1</a>
+    <a href="/2">Forge 2</a>
+    <a href="/" class="active">Forge 3</a>
+  </nav>
 
   <main role="main">
-    <section class="speakers">
-      <div class="container container-copy">
-        <h3>Talks</h3>
-        <p class="lead">Amazing speakers that will move you to create</p>
-
-          <p class="person">
-            <img src="assets/img/kai-brach-200.png" alt="Kai Brach">
-            <strong>Kai Brach</strong>
-            Publisher, editor and art director behind the publication Offscreen which explores the life and the work of people who use the internet and technology to be creative, solve problems, and build successful businesses.<br>
-            <a href="https://www.twitter.com/offscreenmag" target="_blank">@offscreenmag</a>
-          </p>
-
-          <p class="person">
-            <img src="assets/img/laura-jul-200.png" alt="Laura Jul">
-            <strong>Laura Jul</strong>
-            Creative Director at Copenhagen-based digital agency. 15 years of experience from the Danish Advertising, Digital and Direct Marketing Industry. She recently quit her job and was overwhelmed by the response.
-            <a href="https://twitter.com/laurajul" target="_blank">@LauraJul</a>
-          </p>
-
-          <p class="person">
-            <img src="assets/img/holger-lagerfeldt-200.png" alt="Holger Lagerfeldt">
-            <strong>Holger Lagerfeldt</strong>
-            World-renowned producer with 20 years in the music business. After a ten year stretch of making pop hits for Danish and international artists, he decided to branch out and expand his business in 2004.<br>
-            <a href="http://www.pag.dk" target="_blank">pag.dk</a>
-          </p>
-
-          <p class="person">
-            <img src="assets/img/thomas-madsen-mygdal-200.png" alt="Thomas Madsen-Mygdal">
-            <strong>Thomas Madsen-Mygdal</strong>
-            Entrepreneur, Angel Investor, Troublemaker, Activist. Always restless about reinventing things for the world we live in today. Lover of great conversations, spaces and people&mdash;and of augmenting humans. Expect something different.
-            <a href="https://www.twitter.com/mygdal" target="_blank">@mygdal</a>
-          </p>
-
-      </div>
-    </section>
-
-    <section class="details">
-      <div class="container">
-        <p class="column">
-          <strong>Friday</strong>
-          20th of June<br>
-          15:00&ndash;20:00
-        </p>
-        <p class="column">
-          <strong>Design Society</strong>
-          HC Andersens Boulevard 27<br>
-          1553 København V.
-        </p>
-        <p class="column">
-          <strong>Tickets</strong>
-          Admission 100 DKK<br>
-          Admission &amp; Loot 250 DKK
-        </p>
-
-        <aside role="complementary">
-          <p class="lead">
-            <a href="<?php echo $ticket_url ?>" class="button button-signup button-small button-signup-alternate" title="<?php echo $button_help_text ?>"><?php echo $button_callout ?></a>
-            No ticket? Join us on #forgecph
-          </p>
-        </aside>
-      </div>
-    </section>
-
-    <section class="intro">
+    <section class="intro" style="margin-bottom: 0; padding-bottom: 40px;">
       <div class="container container-copy">
         <h2>What is Forge?</h2>
         <p class="lead">
@@ -100,11 +40,15 @@
         </div>
         
         <p class="lead">
-          <a href="/1">See talks from Forge #1</a>
+          See talks from <a href="/1">Forge #1</a> or <a href="/2">Forge #2</a>
         </p>
       </div>
     </section>
   </main>
+
+  <div id="instafeedcontainer">
+    <div id="instafeed"></div>
+  </div>
 
   <section class="sponsors">
     <div class="container container-copy">
@@ -161,14 +105,6 @@
         </p>
       </div>
     </div>
-
-    <aside role="complementary" class="newsletter-callout">
-      <div class="container container-copy">
-        <p class="lead" id="stay-updated">Be notified of new events&mdash;join the mailing list:</p>
-
-        <?php include 'templates/signup.php'; ?>
-      </div>
-    </aside>
   </section>
 
 <?php include 'templates/footer.php'; ?>

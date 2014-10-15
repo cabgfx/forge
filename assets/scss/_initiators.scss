@@ -10,7 +10,7 @@
   }
 
   a {
-    & {color: $green; text-decoration: none;}
+    & {color: $blue-bg; text-decoration: none;}
     &:hover, &:focus {text-decoration: underline;}    
     &:before {content: ""; display: block;}
   }

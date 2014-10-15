@@ -1,7 +1,7 @@
 .contact {
   & {text-align: center;}
-  h4 {color: $red-heading;} 
-  p {line-height: 28px; color: $red-heading;}
+  h4 {color: $blue-heading;} 
+  p {line-height: 28px; color: $blue-heading;}
   a {color: $white; text-decoration: none; font-weight: 500;}
   a:hover, a:focus {text-decoration: underline;}
 }

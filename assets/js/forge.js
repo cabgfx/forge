@@ -1,12 +1,14 @@
 $(function() {
   // BigVideo for non-touch devices
-  if ((!Modernizr.touch) && ($('body').hasClass('frontpage'))) {
-    var BV = new $.BigVideo({container: $('#top')});
+  if ((!Modernizr.touch) && ($('body').hasClass('video-bg'))) {
+    var BV = new $.BigVideo({container: $('#top')}),
+        video_url = $('body').data('video-url');
+
     BV.init();
   
     $('#big-video-wrap').hide();
-  
-    BV.show('//s3-eu-west-1.amazonaws.com/forgecph/Forge2.mp4', {ambient: true});
+
+    BV.show(video_url, {ambient: true});
   
     BV.getPlayer().on('loadedmetadata', function() {
       $('#big-video-wrap').fadeIn(1000);
@@ -47,4 +49,21 @@ $(function() {
 
   // Polyfill <input> @placeholder attribute
   $('.masthead input').placeholder();
+
+  if ($('#instafeedcontainer').length) {
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'forgecph',
+        clientId: '4e46b9d6b7b143e0be28642aec5d41f0',
+        useHttp: true,
+        limit: 50,
+        resolution: "low_resolution",
+        success: positionimages,
+        sortBy: 'random'
+    });
+    
+    function positionimages() {};
+    
+    feed.run();
+  };
 });
