@@ -79,8 +79,7 @@ nav {
 
 .contact {background: $blue-bg;}
 
-#instafeedcontainer {height: 612px;overflow: hidden;}
-
-#instafeed {width: 120%;}
-
-  
+.no-touch {
+  #instafeedcontainer {height: 612px;overflow: hidden;}
+  #instafeed {width: 120%;} 
+}

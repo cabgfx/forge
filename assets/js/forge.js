@@ -50,7 +50,7 @@ $(function() {
   // Polyfill <input> @placeholder attribute
   $('.masthead input').placeholder();
 
-  if ($('#instafeedcontainer').length) {
+  if ((!Modernizr.touch) && ($('#instafeedcontainer').length)) {
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'forgecph',
