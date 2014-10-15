@@ -12,7 +12,7 @@
       <h1 class="logo"><a href="/">Forge</a></h1>
     
       <p class="lead">
-        The second forge event was held on June 20th, 2014.
+        The second Forge event was held on June 20th, 2014.
         More than 150 people got together and listened to 4 amazing talks, enjoyed food &amp; drink and a surplus of inspiration. Rewind below.
       </p>
 
