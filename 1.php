@@ -1,5 +1,9 @@
 <?php $title = 'First | '; ?>
 <?php $description = 'Talks and flashbacks from the very first Forge event, at Danish Design Society, October 25 2013.'; ?>
+<?php $button_help_text = 'Sign up for the mailing list, to be notified when Forge 3 is happening.' ?>
+<?php $button_callout = 'Notify me next time' ?>
+<?php $ticket_url = '#stay-updated' ?>
+
 <?php include 'templates/head.php'; ?>
 
 <body class="video-bg event-1" data-video-url="//s3-eu-west-1.amazonaws.com/forgecph/Forge.mp4">
@@ -11,6 +15,10 @@
         The very first forge event was held on October 25th, 2013.
         More than 200 people got together and listened to 4 amazing talks, enjoyed food, drinks and a surplus of inspiration.
         Rewind below.
+      </p>
+      
+      <p class="ticket-callout">
+        <a href="<?php echo $ticket_url ?>" class="button button-signup" title="<?php echo $button_help_text ?>"><?php echo $button_callout ?></a>
       </p>
     </div>
   </header>
@@ -85,7 +93,7 @@
 
   <aside role="complementary" class="newsletter-callout">
     <div class="container container-copy">
-      <p class="lead">Be notified of new events&mdash;join the mailing list:</p>
+      <p class="lead" id="stay-updated">Be notified of new events&mdash;join the mailing list:</p>
 
       <?php include 'templates/signup.php'; ?>
     </div>

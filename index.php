@@ -1,6 +1,4 @@
 <?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
-<?php $ticket_url = '#stay-updated' ?>
-<?php $ticket_availability = '0' ?>
 <?php $button_help_text = 'Sign up for the mailing list, to be notified when Forge 3 is happening.' ?>
 <?php $button_callout = 'Notify me next time' ?>
 

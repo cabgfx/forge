@@ -1,8 +1,8 @@
-<?php $description = 'We start the sort of activities that we’d like to participate in ourselves.'; ?>
-<?php $ticket_url = '#stay-updated' ?>
-<?php $ticket_availability = '0' ?>
+<?php $title = 'Second | '; ?>
+<?php $description = 'Talks and flashbacks from the second Forge event, at Danish Design Society, June 20 2014.'; ?>
 <?php $button_help_text = 'Sign up for the mailing list, to be notified when Forge 3 is happening.' ?>
 <?php $button_callout = 'Notify me next time' ?>
+<?php $ticket_url = '#stay-updated' ?>
 
 <?php include 'templates/head.php'; ?>
 
@@ -62,7 +62,8 @@
             'name'        => 'Holger Lagerfeldt',
             'description' => 'World-renowned producer with 20 years in the music business.',
             'quote'       => '“Get paid or get laid”',
-            'video_id'    => '108951683'
+            'video_id'    => '108951683',
+            'website'     => 'http://pag.dk'
           ),
           array(
             'img_slug'    => 'kai-brach',
@@ -70,7 +71,7 @@
             'description' => 'Publisher, editor and art director behind the publication Offscreen which explores the life and the work of people who use the internet and technology to be creative, solve problems, and build successful businesses.',
             'quote'       => '“Publishers get pregnant every 3 months.”',
             'video_id'    => '108947278',
-            'twitter'     => 'offscreenmag'
+            'twitter'     => '@offscreenmag'
           )
         );
       ?>
@@ -88,6 +89,10 @@
             <a href="https://www.twitter.com/<?php echo $speaker['twitter'] ?>" target="_blank">
               @<?php echo $speaker['twitter'] ?>
             </a>
+            <?php else: ?>
+              <a href="<?php echo $speaker['website'] ?>" target="_blank">
+                <?php echo $speaker['website'] ?>
+              </a>
             <?php endif; ?>
           </div>
         </header>
