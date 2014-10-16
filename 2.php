@@ -71,7 +71,7 @@
             'description' => 'Publisher, editor and art director behind the publication Offscreen which explores the life and the work of people who use the internet and technology to be creative, solve problems, and build successful businesses.',
             'quote'       => '“Publishers get pregnant every 3 months.”',
             'video_id'    => '108947278',
-            'twitter'     => '@offscreenmag'
+            'twitter'     => 'offscreenmag'
           )
         );
       ?>
