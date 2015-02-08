@@ -8,9 +8,9 @@
   <header role="banner" class="masthead">
     <div class="container" id="top">
       <h1 class="logo"><a href="/">Forge</a></h1>
-    
+
       <p class="lead">
-        The next Forge event is coming <b>Winter 2015</b>.<br>
+        The next Forge event is coming <b>Summer 2015</b>.<br>
         Relive <a href="/2" title="Talks &amp; highlights">Forge 2</a> or sign up below to be notified about tickets.
       </p>
 
@@ -36,7 +36,7 @@
         <div class="video">
           <iframe src="//player.vimeo.com/video/85478724?title=0&amp;byline=0&amp;portrait=0&amp;color=c73932" width="1000" height="562" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-        
+
         <p class="lead">
           See talks from <a href="/1">Forge #1</a> or <a href="/2">Forge #2</a>
         </p>
